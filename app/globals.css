@@ -46,75 +46,55 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+
+  /* Vyolwetu Brand Colors */
+  --vy-red: #A70404;
+  --vy-red-hover: #8E0303;
+  --vy-teal: #334A4F;
+  --vy-teal-deep: #020213;
+  --vy-slate: #526669;
+  --vy-bg: #F7F8F8;
+  --vy-card: #E6E8E8;
+  --vy-border: #D7DADB;
+  --vy-white: #FFFFFF;
+  --vy-black: #000000;
+  --vy-eco: #2F6F5E;
 }
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
-}
-
-.dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  /* Default light theme - Vyolwetu */
+  --background: #F7F8F8;
+  --foreground: #020213;
+  --card: #FFFFFF;
+  --card-foreground: #020213;
+  --popover: #FFFFFF;
+  --popover-foreground: #020213;
+  --primary: #A70404;
+  --primary-foreground: #FFFFFF;
+  --secondary: #334A4F;
+  --secondary-foreground: #FFFFFF;
+  --muted: #E6E8E8;
+  --muted-foreground: #526669;
+  --accent: #2F6F5E;
+  --accent-foreground: #FFFFFF;
+  --destructive: #A70404;
+  --border: #D7DADB;
+  --input: #D7DADB;
+  --ring: #A70404;
+  --chart-1: #A70404;
+  --chart-2: #334A4F;
+  --chart-3: #2F6F5E;
+  --chart-4: #020213;
+  --chart-5: #526669;
+  --radius: 0.5rem;
+  --sidebar: #F7F8F8;
+  --sidebar-foreground: #020213;
+  --sidebar-primary: #A70404;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #E6E8E8;
+  --sidebar-accent-foreground: #020213;
+  --sidebar-border: #D7DADB;
+  --sidebar-ring: #A70404;
 }
 
 @layer base {
@@ -122,9 +102,12 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
   }
   html {
     @apply font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
   }
 }
