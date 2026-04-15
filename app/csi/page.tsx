@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { ArrowRight, Backpack, Heart, Users, Award } from 'lucide-react'
@@ -59,11 +60,12 @@ export default function CSIPage() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <img 
+            <div className="relative aspect-[3/2] rounded-lg overflow-hidden">
+              <Image 
                 src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.37.08%20PM.jpeg" 
                 alt="1000 School Bags Campaign" 
-                className="h-40 rounded-lg object-cover w-full"
+                fill
+                className="object-cover"
               />
             </div>
             <div>
