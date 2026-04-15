@@ -63,7 +63,7 @@ export default function CSIPage() {
               <img 
                 src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.37.08%20PM.jpeg" 
                 alt="1000 School Bags Campaign" 
-                className="rounded-lg shadow-lg w-full"
+                className="h-40 rounded-lg object-cover w-full"
               />
             </div>
             <div>
