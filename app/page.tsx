@@ -108,19 +108,18 @@ export default function Home() {
       <section className="relative bg-[#020213] text-white overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1920&q=80" 
-            alt="Cleaning services" 
-            className="w-full h-full object-cover opacity-30"
+            src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team.png" 
+            alt="Vyolwetu Team" 
+            className="w-full h-full object-cover opacity-40"
           />
         </div>
         <div className="container mx-auto px-4 py-20 lg:py-32 relative">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Clean. Safe. Reliable.
+              Vyolwetu – Leading in creating a better environment
             </h1>
             <p className="text-xl md:text-2xl text-gray-200 mb-8">
-              Professional waste management, cleaning, and construction services 
-              with real community impact across South Africa.
+              Sustainable Waste Management, Cleaning, and Construction Services
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="tel:+27797515707">
