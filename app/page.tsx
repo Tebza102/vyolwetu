@@ -368,31 +368,21 @@ export default function Home() {
                 </Button>
               </Link>
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <img 
-                src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.38%20PM.jpeg" 
+                src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.39%20PM.jpeg" 
                 alt="School Bags Campaign" 
-                className="h-40 rounded-lg object-cover w-full"
+                className="h-48 rounded-lg object-cover w-full"
               />
               <img 
-                src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.38%20PM.jpeg" 
+                src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.40%20PM.jpeg" 
                 alt="Community" 
-                className="h-40 rounded-lg object-cover w-full"
+                className="h-48 rounded-lg object-cover w-full"
               />
               <img 
                 src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.38%20PM.jpeg" 
                 alt="Education" 
-                className="h-40 rounded-lg object-cover w-full"
-              />
-              <img 
-                src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.38%20PM.jpeg" 
-                alt="Partnership" 
-                className="h-40 rounded-lg object-cover w-full"
-              />
-              <img 
-                src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.35%20PM.jpeg" 
-                alt="Partnership" 
-                className="h-40 rounded-lg object-cover w-full"
+                className="h-48 rounded-lg object-cover w-full"
               />
             </div>
           </div>
