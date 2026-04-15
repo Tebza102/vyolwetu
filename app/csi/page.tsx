@@ -1,44 +1,32 @@
 import { Metadata } from 'next'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { ArrowRight, Leaf, Users, Award, Heart, Globe, BookOpen, Backpack } from 'lucide-react'
+import { ArrowRight, Backpack, Heart, Users, Award } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'CSI & Community Impact | Vyolwetu',
-  description: 'Learn about Vyolwetu corporate social investment initiatives focusing on community upliftment through our school bag campaign.',
+  description: 'Vyolwetu 1000 School Bags Campaign - Providing school bags to learners in need across South Africa.',
 }
 
 const pillars = [
   {
     title: 'Community',
-    description: 'Supporting local communities through upliftment programs, education support, and social welfare projects.',
+    description: 'Supporting local communities through education upliftment and social welfare projects.',
     icon: Users,
     color: '#A70404',
-    initiatives: ['School bag donations', 'Youth mentorship', 'Community support']
   },
   {
     title: 'Environment',
-    description: 'Promoting sustainable practices and environmental stewardship through responsible waste management.',
-    icon: Leaf,
+    description: 'Promoting sustainable practices through responsible waste management and environmental education.',
+    icon: Award,
     color: '#2F6F5E',
-    initiatives: ['Recycling awareness programs', 'Clean-up campaigns', 'Environmental education']
   },
   {
-    title: 'Skills Development',
+    title: 'Skills',
     description: 'Creating employment and skills development opportunities through training programs.',
-    icon: Award,
+    icon: Heart,
     color: '#334A4F',
-    initiatives: ['Skills training programs', 'Internship opportunities', 'Entrepreneurship support']
-  }
-]
-
-const initiatives = [
-  {
-    title: '1000 School Bags Campaign',
-    description: 'Distributing 1000 school bags to learners in need across South Africa. Every child deserves the tools to succeed in their education journey.',
-    pillar: 'Community',
-    icon: Backpack
   }
 ]
 
@@ -60,8 +48,8 @@ export default function CSIPage() {
               CSI & Community Impact
             </h1>
             <p className="text-xl text-gray-200 mb-8">
-              At Vyolwetu, we believe in creating meaningful change beyond our core services. 
-              Our flagship CSI initiative focuses on education and community upliftment.
+              At Vyolwetu, we believe in making a meaningful difference in our communities. 
+              Our focus: helping learners succeed through education.
             </p>
           </div>
         </div>
@@ -79,89 +67,24 @@ export default function CSIPage() {
               />
             </div>
             <div>
-              <div className="text-xs font-bold text-[#A70404] uppercase tracking-wide mb-2">Our Main Initiative</div>
+              <div className="text-xs font-bold text-[#A70404] uppercase tracking-wide mb-2">Our CSI Initiative</div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#020213] mb-4">
                 1000 School Bags Campaign
               </h2>
-              <p className="text-[#526669] text-lg mb-6">
+              <p className="text-[#526669] text-lg mb-4">
                 Every child deserves the tools to succeed in their education journey. 
-                Vyolwetu has committed to distributing <strong>1000 school bags</strong> to learners 
-                in need across South Africa.
+                Vyolwetu has committed to distributing <strong>1000 school bags</strong> to learners in need across South Africa.
               </p>
               <p className="text-[#526669] mb-6">
                 This initiative aims to support underprivileged students and help them start the school year 
                 with dignity and the essential tools they need for their education.
               </p>
-              <div className="flex gap-4">
-                <Link href="/contact">
-                  <Button className="bg-[#A70404] hover:bg-[#8E0303] text-white">
-                    Donate or Partner With Us
-                  </Button>
-                </Link>
-                <Link href="/projects">
-                  <Button variant="outline" className="border-[#A70404] text-[#A70404] hover:bg-[#A70404] hover:text-white">
-                    View Campaign
-                  </Button>
-                </Link>
-              </div>
+              <Link href="/contact">
+                <Button className="bg-[#A70404] hover:bg-[#8E0303] text-white">
+                  Partner or Donate
+                </Button>
+              </Link>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Our CSI Pillars */}
-      <section className="py-16 lg:py-24 bg-[#F7F8F8]">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#020213] mb-4">
-              Our CSI Pillars
-            </h2>
-            <p className="text-[#526669] max-w-2xl mx-auto">
-              Our corporate social investment is guided by three core pillars that drive our community initiatives.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {pillars.map((pillar) => (
-              <Card key={pillar.title} className="border-[#D7DADB] overflow-hidden">
-                <div className="h-2" style={{ backgroundColor: pillar.color }} />
-                <CardContent className="p-6">
-                  <div 
-                    className="w-14 h-14 rounded-lg flex items-center justify-center mb-4"
-                    style={{ backgroundColor: pillar.color + '15' }}
-                  >
-                    <pillar.icon className="w-7 h-7" style={{ color: pillar.color }} />
-                  </div>
-                  <h3 className="text-xl font-bold text-[#020213] mb-3">{pillar.title}</h3>
-                  <p className="text-[#526669] text-sm">{pillar.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Current Initiatives */}
-      <section className="py-16 lg:py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#020213] mb-4">
-              Current Initiatives
-            </h2>
-            <p className="text-[#526669] max-w-2xl mx-auto">
-              Active programs making a difference in our communities.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {initiatives.map((initiative, index) => (
-              <Card key={index} className="border-[#D7DADB]">
-                <CardContent className="p-6">
-                  <initiative.icon className="w-10 h-10 text-[#A70404] mb-4" />
-                  <div className="text-xs font-bold text-[#A70404] mb-2">{initiative.pillar}</div>
-                  <h3 className="font-bold text-[#020213] mb-2">{initiative.title}</h3>
-                  <p className="text-[#526669] text-sm">{initiative.description}</p>
-                </CardContent>
-              </Card>
-            ))}
           </div>
         </div>
       </section>
@@ -171,7 +94,7 @@ export default function CSIPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Our Impact
+              Our Impact So Far
             </h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -195,8 +118,39 @@ export default function CSIPage() {
         </div>
       </section>
 
-      {/* Partner / Get Involved */}
+      {/* Our Values */}
       <section className="py-16 lg:py-24 bg-[#F7F8F8]">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#020213] mb-4">
+              Our CSI Values
+            </h2>
+            <p className="text-[#526669] max-w-2xl mx-auto">
+              The values that guide our community investment.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {pillars.map((pillar) => (
+              <Card key={pillar.title} className="border-[#D7DADB] overflow-hidden">
+                <div className="h-2" style={{ backgroundColor: pillar.color }} />
+                <CardContent className="p-6 text-center">
+                  <div 
+                    className="w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-4"
+                    style={{ backgroundColor: pillar.color + '15' }}
+                  >
+                    <pillar.icon className="w-7 h-7" style={{ color: pillar.color }} />
+                  </div>
+                  <h3 className="text-xl font-bold text-[#020213] mb-3">{pillar.title}</h3>
+                  <p className="text-[#526669] text-sm">{pillar.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Partner Section */}
+      <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -204,20 +158,20 @@ export default function CSIPage() {
                 Partner With Us
               </h2>
               <p className="text-[#526669] mb-6">
-                We welcome partnerships with organizations, NGOs, schools, and community groups who share 
-                our vision for education transformation and community upliftment.
+                Join us in making a difference. We welcome partnerships with organizations, schools, 
+                and community groups who share our vision for education transformation.
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-center gap-3 text-[#526669]">
-                  <Heart className="w-5 h-5 text-[#A70404]" />
+                  <Backpack className="w-5 h-5 text-[#A70404]" />
                   <span>Sponsor school bags for your community</span>
                 </li>
                 <li className="flex items-center gap-3 text-[#526669]">
                   <Users className="w-5 h-5 text-[#A70404]" />
-                  <span>Partner with us for distribution</span>
+                  <span>Partner for distribution</span>
                 </li>
                 <li className="flex items-center gap-3 text-[#526669]">
-                  <Award className="w-5 h-5 text-[#A70404]" />
+                  <Heart className="w-5 h-5 text-[#A70404]" />
                   <span>Corporate social investment</span>
                 </li>
               </ul>
@@ -230,17 +184,17 @@ export default function CSIPage() {
             <div className="grid grid-cols-2 gap-4">
               <img 
                 src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.38%20PM.jpeg" 
-                alt="School Bags Campaign" 
-                className="h-40 rounded-lg object-cover w-full"
-              />
-              <img 
-                src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.38%20PM.jpeg" 
-                alt="Community" 
+                alt="School Bags" 
                 className="h-40 rounded-lg object-cover w-full"
               />
               <img 
                 src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.38%20PM.jpeg" 
                 alt="Education" 
+                className="h-40 rounded-lg object-cover w-full"
+              />
+              <img 
+                src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.38%20PM.jpeg" 
+                alt="Community" 
                 className="h-40 rounded-lg object-cover w-full"
               />
               <img 

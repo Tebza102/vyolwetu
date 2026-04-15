@@ -349,38 +349,35 @@ export default function Home() {
                 CSI & Community Impact
               </h2>
               <p className="text-[#526669] mb-6">
-                At Vyolwetu, we believe in creating meaningful change beyond our core services. 
-                Our CSI initiatives focus on environmental sustainability, community upliftment, 
-                and skills development.
+                At Vyolwetu, we believe in making a meaningful difference. 
+                Our flagship CSI initiative: <strong>1000 School Bags Campaign</strong> - 
+                providing school bags to learners in need across South Africa.
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-                {csiPillars.map((pillar) => (
-                  <div key={pillar.title} className="text-center p-4 bg-[#F7F8F8] rounded-lg">
-                    <pillar.icon className="w-8 h-8 text-[#2F6F5E] mx-auto mb-2" />
-                    <h3 className="font-bold text-[#020213] text-sm">{pillar.title}</h3>
-                  </div>
-                ))}
-              </div>
               <Link href="/csi">
                 <Button className="bg-[#2F6F5E] hover:bg-[#265A4D] text-white">
-                  View CSI Projects <ArrowRight className="w-4 h-4 ml-2" />
+                  Learn About Our Campaign <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
               </Link>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img 
-                src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.35%20PM.jpeg" 
-                alt="CSI Initiative" 
+                src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.38%20PM.jpeg" 
+                alt="School Bags Campaign" 
                 className="h-40 rounded-lg object-cover w-full"
               />
               <img 
-                src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.35%20PM.jpeg" 
+                src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.38%20PM.jpeg" 
                 alt="Community" 
                 className="h-40 rounded-lg object-cover w-full"
               />
               <img 
-                src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.35%20PM.jpeg" 
-                alt="Skills" 
+                src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.38%20PM.jpeg" 
+                alt="Education" 
+                className="h-40 rounded-lg object-cover w-full"
+              />
+              <img 
+                src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.38%20PM.jpeg" 
+                alt="Partnership" 
                 className="h-40 rounded-lg object-cover w-full"
               />
               <img 
