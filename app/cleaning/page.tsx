@@ -224,7 +224,18 @@ export default function CleaningPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <img 
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" 
+                src="https://hjiihzsrycisbfjvyzjei.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/MD%20and%20the%20cleaning%20team.PNG" 
+                alt="Cleaning Team" 
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="font-bold text-[#020213] mb-2">Professional Cleaning Team</h3>
+                <p className="text-[#526669] text-sm">Vyolwetu Team</p>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg overflow-hidden shadow-md">
+              <img 
+                src="https://hjiihzsrycisbfjvyzjei.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/Office%20Cleaning.png" 
                 alt="Office Cleaning" 
                 className="w-full h-48 object-cover"
               />
@@ -235,24 +246,13 @@ export default function CleaningPage() {
             </div>
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <img 
-                src="https://images.unsplash.com/photo-1563453392212-326f5e854473?w=600&q=80" 
-                alt="Deep Cleaning" 
+                src="https://hjiihzsrycisbfjvyzjei.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/Office%20Cleaning.png" 
+                alt="Commercial Cleaning" 
                 className="w-full h-48 object-cover"
               />
               <div className="p-4">
-                <h3 className="font-bold text-[#020213] mb-2">Deep Cleaning</h3>
-                <p className="text-[#526669] text-sm">Industrial Facility</p>
-              </div>
-            </div>
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <img 
-                src="https://images.unsplash.com/photo-1529619768328-e37af76c6fe5?w=600&q=80" 
-                alt="Window Cleaning" 
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
-                <h3 className="font-bold text-[#020213] mb-2">Window Cleaning</h3>
-                <p className="text-[#526669] text-sm">Commercial Building</p>
+                <h3 className="font-bold text-[#020213] mb-2">Commercial Cleaning</h3>
+                <p className="text-[#526669] text-sm">Corporate Buildings</p>
               </div>
             </div>
           </div>

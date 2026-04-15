@@ -298,7 +298,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <img 
-                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80" 
+                src="https://hjiihzsrycisbfjvyzjei.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/Office%20Cleaning.png" 
                 alt="Commercial Building Cleaning" 
                 className="w-full h-48 object-cover"
               />
@@ -309,7 +309,7 @@ export default function Home() {
             </div>
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <img 
-                src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=600&q=80" 
+                src="https://hjiihzsrycisbfjvyzjei.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team.png" 
                 alt="Industrial Waste Management" 
                 className="w-full h-48 object-cover"
               />
@@ -320,7 +320,7 @@ export default function Home() {
             </div>
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <img 
-                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" 
+                src="https://hjiihzsrycisbfjvyzjei.supabase.co/storage/v1/object/public/vyolwetu-images/Construction/WhatsApp%20Image%202026-02-06%20at%206.02.33%20PM.jpeg" 
                 alt="Site Clearing & Development" 
                 className="w-full h-48 object-cover"
               />

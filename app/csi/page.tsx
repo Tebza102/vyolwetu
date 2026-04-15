@@ -229,24 +229,24 @@ export default function CSIPage() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img 
-                src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&q=80" 
-                alt="Environment" 
-                className="h-40 rounded-lg object-cover"
+                src="https://hjiihzsrycisbfjvyzjei.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.35%20PM.jpeg" 
+                alt="CSI Initiative" 
+                className="h-40 rounded-lg object-cover w-full"
               />
               <img 
-                src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&q=80" 
+                src="https://hjiihzsrycisbfjvyzjei.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.35%20PM.jpeg" 
                 alt="Community" 
-                className="h-40 rounded-lg object-cover"
+                className="h-40 rounded-lg object-cover w-full"
               />
               <img 
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&q=80" 
+                src="https://hjiihzsrycisbfjvyzjei.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.35%20PM.jpeg" 
                 alt="Skills" 
-                className="h-40 rounded-lg object-cover"
+                className="h-40 rounded-lg object-cover w-full"
               />
               <img 
-                src="https://images.unsplash.com/photo-1531206715517-5c0ba140840e?w=400&q=80" 
+                src="https://hjiihzsrycisbfjvyzjei.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.35%20PM.jpeg" 
                 alt="Partnership" 
-                className="h-40 rounded-lg object-cover"
+                className="h-40 rounded-lg object-cover w-full"
               />
             </div>
           </div>

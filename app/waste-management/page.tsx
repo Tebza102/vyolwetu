@@ -176,18 +176,18 @@ export default function WasteManagementPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <img 
-                src="https://images.unsplash.com/photo-1565019627338-6c1a1c7e2f8d?w=600&q=80" 
-                alt="Industrial Waste" 
+                src="https://hjiihzsrycisbfjvyzjei.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team.png" 
+                alt="Waste Management Team" 
                 className="w-full h-48 object-cover"
               />
               <div className="p-4">
-                <h3 className="font-bold text-[#020213] mb-2">Industrial Waste Solution</h3>
-                <p className="text-[#526669] text-sm">Mpumalanga</p>
+                <h3 className="font-bold text-[#020213] mb-2">Waste Management Team</h3>
+                <p className="text-[#526669] text-sm">Professional Team</p>
               </div>
             </div>
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <img 
-                src="https://images.unsplash.com/photo-1616410634325-3c80a010f37e?w=600&q=80" 
+                src="https://hjiihzsrycisbfjvyzjei.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team.png" 
                 alt="Commercial Collection" 
                 className="w-full h-48 object-cover"
               />
@@ -198,12 +198,12 @@ export default function WasteManagementPage() {
             </div>
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <img 
-                src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=600&q=80" 
-                alt="Recycling Initiative" 
+                src="https://hjiihzsrycisbfjvyzjei.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team.png" 
+                alt="Recycling" 
                 className="w-full h-48 object-cover"
               />
               <div className="p-4">
-                <h3 className="font-bold text-[#020213] mb-2">Recycling Initiative</h3>
+                <h3 className="font-bold text-[#020213] mb-2">Recycling Services</h3>
                 <p className="text-[#526669] text-sm">Gauteng</p>
               </div>
             </div>
