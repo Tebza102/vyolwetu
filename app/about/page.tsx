@@ -77,24 +77,24 @@ export default function AboutPage() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img 
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&q=80" 
+                src="https://hjiihzsrycisbfjvyzjei.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/Office%20Cleaning.png" 
                 alt="Commercial" 
-                className="h-40 rounded-lg object-cover"
+                className="h-40 rounded-lg object-cover w-full"
               />
               <img 
-                src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=400&q=80" 
+                src="https://hjiihzsrycisbfjvyzjei.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team.png" 
                 alt="Waste Management" 
-                className="h-40 rounded-lg object-cover"
+                className="h-40 rounded-lg object-cover w-full"
               />
               <img 
-                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&q=80" 
+                src="https://hjiihzsrycisbfjvyzjei.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/MD%20and%20the%20cleaning%20team.PNG" 
                 alt="Cleaning" 
-                className="h-40 rounded-lg object-cover"
+                className="h-40 rounded-lg object-cover w-full"
               />
               <img 
-                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&q=80" 
+                src="https://hjiihzsrycisbfjvyzjei.supabase.co/storage/v1/object/public/vyolwetu-images/Construction/WhatsApp%20Image%202026-02-06%20at%206.02.33%20PM.jpeg" 
                 alt="Construction" 
-                className="h-40 rounded-lg object-cover"
+                className="h-40 rounded-lg object-cover w-full"
               />
             </div>
           </div>
@@ -180,24 +180,24 @@ export default function AboutPage() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img 
-                src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&q=80" 
+                src="https://hjiihzsrycisbfjvyzjei.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.35%20PM.jpeg" 
                 alt="Environment" 
-                className="h-32 rounded-lg object-cover"
+                className="h-32 rounded-lg object-cover w-full"
               />
               <img 
-                src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&q=80" 
+                src="https://hjiihzsrycisbfjvyzjei.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.35%20PM.jpeg" 
                 alt="Community" 
-                className="h-32 rounded-lg object-cover"
+                className="h-32 rounded-lg object-cover w-full"
               />
               <img 
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&q=80" 
+                src="https://hjiihzsrycisbfjvyzjei.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/MD%20and%20the%20cleaning%20team.PNG" 
                 alt="Skills" 
-                className="h-32 rounded-lg object-cover"
+                className="h-32 rounded-lg object-cover w-full"
               />
               <img 
-                src="https://images.unsplash.com/photo-1531206715517-5c0ba140840e?w=400&q=80" 
+                src="https://hjiihzsrycisbfjvyzjei.supabase.co/storage/v1/object/public/vyolwetu-images/Construction/WhatsApp%20Image%202026-02-06%20at%206.02.33%20PM.jpeg" 
                 alt="Partnership" 
-                className="h-32 rounded-lg object-cover"
+                className="h-32 rounded-lg object-cover w-full"
               />
             </div>
           </div>
