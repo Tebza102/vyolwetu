@@ -111,7 +111,7 @@ export default function ContactPage() {
               {/* WhatsApp CTA */}
               <div className="mt-8">
                 <a 
-                  href="https://wa.me/27797515707" 
+                  href="https://wa.me/+27797515707" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-lg hover:bg-[#20BD5A] transition-colors"

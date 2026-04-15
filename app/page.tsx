@@ -134,7 +134,7 @@ export default function Home() {
                   Get a Quote
                 </Button>
               </Link>
-              <a href="https://wa.me/27797515707" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/+27797515707?text=Hi%20Vyolwetu,%20I%27d%20like%20to%20inquire%20about%20your%20services" target="_blank" rel="noopener noreferrer">
                 <Button className="bg-[#25D366] text-white hover:bg-[#20BD5A] text-lg px-8 py-6">
                   WhatsApp Us
                 </Button>

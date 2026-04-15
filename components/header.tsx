@@ -33,7 +33,7 @@ export default function Header() {
               <Mail className="w-4 h-4" />
               <span>info@vyolwetu.co.za</span>
             </a>
-            <a href="https://wa.me/27797515707" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-[#A70404] transition-colors">
+            <a href="https://wa.me/+27797515707" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-[#A70404] transition-colors">
               <MessageCircle className="w-4 h-4" />
               <span>WhatsApp</span>
             </a>
