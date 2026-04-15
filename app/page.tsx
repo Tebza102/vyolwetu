@@ -108,7 +108,7 @@ export default function Home() {
       <section className="relative bg-[#020213] text-white overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team.png" 
+            src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team2.png" 
             alt="Vyolwetu Team" 
             className="w-full h-full object-cover opacity-40"
           />
