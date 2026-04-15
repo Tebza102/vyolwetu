@@ -130,12 +130,12 @@ export default function Home() {
                 </Button>
               </a>
               <Link href="/contact">
-                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-[#020213] text-lg px-8 py-6">
+                <Button className="bg-white text-[#020213] hover:bg-gray-100 text-lg px-8 py-6">
                   Get a Quote
                 </Button>
               </Link>
               <a href="https://wa.me/27797515707" target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" className="border-white text-white hover:bg-[#25D366] hover:text-white hover:border-[#25D366] text-lg px-8 py-6">
+                <Button className="bg-[#25D366] text-white hover:bg-[#20BD5A] text-lg px-8 py-6">
                   WhatsApp Us
                 </Button>
               </a>

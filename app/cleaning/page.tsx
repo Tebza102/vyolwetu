@@ -65,7 +65,7 @@ export default function CleaningPage() {
                 </Button>
               </a>
               <Link href="/contact">
-                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-[#334A4F] text-lg px-8 py-6">
+                <Button className="bg-white text-[#334A4F] hover:bg-gray-100 text-lg px-8 py-6">
                   Get a Quote
                 </Button>
               </Link>
@@ -276,7 +276,7 @@ export default function CleaningPage() {
               </Button>
             </a>
             <Link href="/contact">
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-[#334A4F] text-lg px-8 py-6">
+              <Button className="bg-white text-[#334A4F] hover:bg-gray-100 text-lg px-8 py-6">
                 Get a Quote <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </Link>
