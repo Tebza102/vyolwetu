@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Phone, ArrowRight, CheckCircle, Leaf, Users, Award } from 'lucide-react'
@@ -105,10 +106,12 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative bg-[#020213] text-white overflow-hidden">
         <div className="absolute inset-0">
-          <img 
+          <Image 
             src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team2.png" 
             alt="Vyolwetu Team" 
-            className="w-full h-full object-cover opacity-40"
+            fill
+            priority
+            className="object-cover opacity-40"
           />
         </div>
         <div className="container mx-auto px-4 py-20 lg:py-32 relative">
@@ -170,11 +173,12 @@ export default function Home() {
             {services.map((service) => (
               <Link key={service.title} href={service.href}>
                 <Card className="h-full hover:shadow-lg transition-shadow border-[#D7DADB] group cursor-pointer overflow-hidden">
-                  <div className="h-48 overflow-hidden">
-                    <img 
+                  <div className="relative h-48 overflow-hidden">
+                    <Image 
                       src={service.image} 
                       alt={service.title} 
-                      className="w-full h-full object-cover"
+                      fill
+                      className="object-cover"
                     />
                   </div>
                   <CardContent className="p-6">
@@ -294,33 +298,36 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <img 
+            <div className="relative h-48 bg-white rounded-lg overflow-hidden shadow-md">
+              <Image 
                 src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/Office%20Cleaning.png" 
                 alt="Commercial Building Cleaning" 
-                className="w-full h-48 object-cover"
+                fill
+                className="object-cover"
               />
               <div className="p-4">
                 <h3 className="font-bold text-[#020213] mb-2">Commercial Building Cleaning</h3>
                 <p className="text-[#526669] text-sm">Johannesburg CBD</p>
               </div>
             </div>
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <img 
+            <div className="relative h-48 bg-white rounded-lg overflow-hidden shadow-md">
+              <Image 
                 src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team.png" 
                 alt="Industrial Waste Management" 
-                className="w-full h-48 object-cover"
+                fill
+                className="object-cover"
               />
               <div className="p-4">
                 <h3 className="font-bold text-[#020213] mb-2">Industrial Waste Management</h3>
                 <p className="text-[#526669] text-sm">Mpumalanga</p>
               </div>
             </div>
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <img 
+            <div className="relative h-48 bg-white rounded-lg overflow-hidden shadow-md">
+              <Image 
                 src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Construction/WhatsApp%20Image%202026-02-06%20at%206.02.33%20PM.jpeg" 
                 alt="Site Clearing & Development" 
-                className="w-full h-48 object-cover"
+                fill
+                className="object-cover"
               />
               <div className="p-4">
                 <h3 className="font-bold text-[#020213] mb-2">Site Clearing & Development</h3>
@@ -358,21 +365,30 @@ export default function Home() {
               </Link>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <img 
-                src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.37.08%20PM.jpeg" 
-                alt="1000 School Bags Campaign" 
-                className="h-48 rounded-lg object-cover w-full"
-              />
-              <img 
-                src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.40%20PM.jpeg" 
-                alt="Community" 
-                className="h-48 rounded-lg object-cover w-full"
-              />
-              <img 
-                src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.38%20PM.jpeg" 
-                alt="Education" 
-                className="h-48 rounded-lg object-cover w-full"
-              />
+              <div className="relative aspect-[3/2] rounded-lg overflow-hidden">
+                <Image 
+                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.37.08%20PM.jpeg" 
+                  alt="1000 School Bags Campaign" 
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative aspect-[3/2] rounded-lg overflow-hidden">
+                <Image 
+                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.40%20PM.jpeg" 
+                  alt="Community" 
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative aspect-[3/2] rounded-lg overflow-hidden">
+                <Image 
+                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.38%20PM.jpeg" 
+                  alt="Education" 
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
