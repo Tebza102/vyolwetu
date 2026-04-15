@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <head>
-        <link rel="icon" href="/VyulwetuFavcon.png" type="image/png" />
+        <link rel="icon" href="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.37.08%20PM.jpeg" type="image/jpeg" />
       </head>
       <body className="min-h-full flex flex-col bg-[#F7F8F8]">
         <Header />
