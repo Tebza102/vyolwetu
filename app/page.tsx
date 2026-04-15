@@ -359,8 +359,8 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <img 
-                src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.39%20PM.jpeg" 
-                alt="School Bags Campaign" 
+                src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.37.08%20PM.jpeg" 
+                alt="1000 School Bags Campaign" 
                 className="h-48 rounded-lg object-cover w-full"
               />
               <img 
