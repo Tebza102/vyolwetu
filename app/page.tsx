@@ -12,21 +12,24 @@ const services = [
     description: 'Responsible waste collection, recycling, and disposal solutions for businesses and communities.',
     icon: '♻️',
     href: '/waste-management',
-    color: '#A70404'
+    color: '#A70404',
+    image: 'https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/MD%20and%20the%20cleaning%20team.PNG'
   },
   {
     title: 'Professional Cleaning',
     description: 'Commercial and industrial cleaning services including sanitization, deep cleaning, and window cleaning.',
     icon: '🧹',
     href: '/cleaning',
-    color: '#334A4F'
+    color: '#334A4F',
+    image: 'https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/Site%20Cleaning.png'
   },
   {
     title: 'Construction',
     description: 'Construction services, site cleaning, and infrastructure development with safety focus.',
     icon: '🏗️',
     href: '/construction',
-    color: '#2F6F5E'
+    color: '#2F6F5E',
+    image: 'https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Construction/WhatsApp%20Image%202026-04-02%20at%2010.32.41%20AM%20(1).jpeg'
   }
 ]
 
@@ -171,7 +174,14 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {services.map((service) => (
               <Link key={service.title} href={service.href}>
-                <Card className="h-full hover:shadow-lg transition-shadow border-[#D7DADB] group cursor-pointer">
+                <Card className="h-full hover:shadow-lg transition-shadow border-[#D7DADB] group cursor-pointer overflow-hidden">
+                  <div className="h-48 overflow-hidden">
+                    <img 
+                      src={service.image} 
+                      alt={service.title} 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                   <CardContent className="p-6">
                     <div 
                       className="w-12 h-12 rounded-lg flex items-center justify-center text-2xl mb-4"
