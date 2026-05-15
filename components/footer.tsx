@@ -3,119 +3,121 @@ import { Phone, Mail, MapPin } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="bg-[#020213] text-white">
-      {/* Main Footer */}
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Company Info */}
+    <footer className="bg-[#111111] text-white">
+      <div className="h-0.5 w-full bg-[#A80000]" />
+      <div className="container mx-auto px-4 py-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <img src="/VyolwetuLogo.png" alt="Vyolwetu" className="h-10 w-auto" />
-            </div>
-            <p className="text-gray-300 text-sm mb-2">Passion to Serve</p>
-            <p className="text-gray-300 text-sm mb-4">
-              Clean. Safe. Reliable. Eco-conscious service delivery with real community impact.
+            <img 
+              src="/VyolwetuLogo.png" 
+              alt="Vyolwetu - Passion to Serve" 
+              className="h-10 w-auto object-contain mb-4 brightness-0 invert" 
+            />
+            <p className="text-[#A80000] font-semibold text-sm mb-3 tracking-wide">Passion to Serve</p>
+            <p className="text-gray-400 text-sm leading-relaxed mb-5 max-w-xs">
+              Integrated waste management, professional cleaning, and construction support services. Cleaner sites. Safer spaces. Reliable delivery.
             </p>
             <div className="flex gap-4">
-              <span className="text-gray-300 hover:text-[#A70404] transition-colors cursor-pointer">FB</span>
-              <span className="text-gray-300 hover:text-[#A70404] transition-colors cursor-pointer">LI</span>
+              <span className="text-gray-500 hover:text-[#A80000] transition-colors cursor-pointer text-sm font-medium">FB</span>
+              <span className="text-gray-500 hover:text-[#A80000] transition-colors cursor-pointer text-sm font-medium">LI</span>
             </div>
           </div>
 
-          {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
-            <ul className="space-y-2">
+            <h3 className="text-sm font-bold uppercase tracking-widest text-gray-300 mb-5">Services</h3>
+            <ul className="space-y-3">
               <li>
-                <Link href="/waste-management" className="text-gray-300 hover:text-[#A70404] transition-colors text-sm">
+                <Link href="/waste-management" className="text-gray-400 hover:text-[#A80000] transition-colors text-sm inline-block">
                   Waste Management
                 </Link>
               </li>
               <li>
-                <Link href="/cleaning" className="text-gray-300 hover:text-[#A70404] transition-colors text-sm">
+                <Link href="/cleaning" className="text-gray-400 hover:text-[#A80000] transition-colors text-sm inline-block">
                   Professional Cleaning
                 </Link>
               </li>
               <li>
-                <Link href="/construction" className="text-gray-300 hover:text-[#A70404] transition-colors text-sm">
-                  Construction Services
+                <Link href="/construction" className="text-gray-400 hover:text-[#A80000] transition-colors text-sm inline-block">
+                  Construction Support & Site Services
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+            <h3 className="text-sm font-bold uppercase tracking-widest text-gray-300 mb-5">Quick Links</h3>
+            <ul className="space-y-3">
               <li>
-                <Link href="/projects" className="text-gray-300 hover:text-[#A70404] transition-colors text-sm">
+                <Link href="/projects" className="text-gray-400 hover:text-[#A80000] transition-colors text-sm inline-block">
                   Our Projects
                 </Link>
               </li>
               <li>
-                <Link href="/csi" className="text-gray-300 hover:text-[#A70404] transition-colors text-sm">
+                <Link href="/csi" className="text-gray-400 hover:text-[#A80000] transition-colors text-sm inline-block">
                   CSI & Community
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-300 hover:text-[#A70404] transition-colors text-sm">
+                <Link href="/about" className="text-gray-400 hover:text-[#A80000] transition-colors text-sm inline-block">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-300 hover:text-[#A70404] transition-colors text-sm">
+                <Link href="/contact" className="text-gray-400 hover:text-[#A80000] transition-colors text-sm inline-block">
                   Contact
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-            <ul className="space-y-3">
+            <h3 className="text-sm font-bold uppercase tracking-widest text-gray-300 mb-5">Contact Us</h3>
+            <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-[#A70404] flex-shrink-0 mt-0.5" />
-                <span className="text-gray-300 text-sm">
-                  South Africa
+                <MapPin className="w-5 h-5 text-[#A80000] flex-shrink-0 mt-0.5" />
+                <span className="text-gray-400 text-sm">
+                  55 Maseko Street, Duduza, 1496
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-[#A70404] flex-shrink-0" />
-                <a href="tel:+27797515707" className="text-gray-300 hover:text-[#A70404] transition-colors text-sm">
-                  079 751 5707
+                <Phone className="w-5 h-5 text-[#A80000] flex-shrink-0" />
+                <a href="tel:+27797517507" className="text-gray-400 hover:text-[#A80000] transition-colors text-sm">
+                  +27 79 751 7507
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-[#A70404] flex-shrink-0" />
-                <a href="mailto:info@vyolwetu.co.za" className="text-gray-300 hover:text-[#A70404] transition-colors text-sm">
-                  info@vyolwetu.co.za
-                </a>
+                <Mail className="w-5 h-5 text-[#A80000] flex-shrink-0" />
+                <div className="flex flex-col gap-1">
+                  <a href="mailto:info@vyolwetu.co.za" className="text-gray-400 hover:text-[#A80000] transition-colors text-sm">
+                    info@vyolwetu.co.za
+                  </a>
+                  <a href="mailto:nqobile@vyolwetu.co.za" className="text-gray-500 hover:text-[#A80000] transition-colors text-xs">
+                    nqobile@vyolwetu.co.za
+                  </a>
+                </div>
               </li>
             </ul>
           </div>
         </div>
       </div>
 
-      {/* Bottom Bar */}
-      <div className="border-t border-gray-700">
-        <div className="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} Vyolwetu. All rights reserved.
+      <div className="border-t border-gray-800">
+        <div className="container mx-auto px-4 py-5 flex flex-col md:flex-row justify-between items-center gap-3">
+          <p className="text-gray-500 text-sm">
+            &copy; {new Date().getFullYear()} Vyolwetu. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm items-center">
-            <a href="#" className="text-gray-400 hover:text-[#A70404] transition-colors">
+            <a href="#" className="text-gray-500 hover:text-[#A80000] transition-colors">
               Privacy Policy
             </a>
-            <a href="#" className="text-gray-400 hover:text-[#A70404] transition-colors">
+            <a href="#" className="text-gray-500 hover:text-[#A80000] transition-colors">
               Terms of Service
             </a>
             <a 
               href="https://www.apprigate.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-[#A70404] transition-colors text-xs"
+              className="text-gray-500 hover:text-[#A80000] transition-colors text-xs"
             >
               Designed by Apprigate
             </a>

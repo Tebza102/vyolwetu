@@ -20,107 +20,117 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white border-b border-[#D7DADB]">
-      {/* Top Bar */}
-      <div className="hidden lg:block bg-[#020213] text-white py-2">
+    <header className="sticky top-0 z-50 w-full bg-white shadow-sm">
+      <div className="h-1 w-full bg-[#A80000]" />
+      <div className="bg-[#111111] text-white py-2 hidden lg:block">
         <div className="container mx-auto px-4 flex justify-between items-center text-sm">
           <div className="flex items-center gap-6">
-            <a href="tel:+27797515707" className="flex items-center gap-2 hover:text-[#A70404] transition-colors">
+            <a href="tel:+27797517507" className="flex items-center gap-2 hover:text-[#A80000] transition-colors">
               <Phone className="w-4 h-4" />
-              <span>079 751 5707</span>
+              <span>+27 79 751 7507</span>
             </a>
-            <a href="mailto:info@vyolwetu.co.za" className="flex items-center gap-2 hover:text-[#A70404] transition-colors">
+            <a href="mailto:nqobile@vyolwetu.co.za" className="flex items-center gap-2 hover:text-[#A80000] transition-colors">
               <Mail className="w-4 h-4" />
-              <span>info@vyolwetu.co.za</span>
+              <span>nqobile@vyolwetu.co.za</span>
             </a>
-            <a href="https://wa.me/+27797515707" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-[#A70404] transition-colors">
+            <a href="https://wa.me/27797517507" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-[#A80000] transition-colors">
               <MessageCircle className="w-4 h-4" />
               <span>WhatsApp</span>
             </a>
           </div>
           <Link href="/contact">
-            <Button className="bg-[#A70404] hover:bg-[#8E0303] text-white text-sm py-1 px-4">
+            <Button className="bg-[#A80000] hover:bg-[#850000] text-white text-sm py-1 px-4 h-8 rounded-full">
               Get a Quote
             </Button>
           </Link>
         </div>
       </div>
 
-      {/* Main Header */}
-      <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <img src="/VyolwetuLogo.png" alt="Vyolwetu" className="h-12 w-auto" />
-            <div className="hidden md:block">
-              <span className="text-[#243C42] font-bold text-lg">Passion to Serve</span>
-            </div>
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between py-4">
+          <Link href="/" className="flex items-center">
+            <img 
+              src="/VyolwetuLogo.png" 
+              alt="Vyolwetu - Passion to Serve" 
+              className="h-11 w-auto object-contain" 
+            />
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-6">
+          <nav className="hidden lg:flex items-center gap-5">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-[#526669] hover:text-[#A70404] font-medium transition-colors text-sm"
+                className="text-[#111111] hover:text-[#A80000] font-medium transition-colors text-sm tracking-wide"
               >
                 {link.label}
               </Link>
             ))}
           </nav>
 
-          {/* Desktop CTA */}
-          <div className="hidden lg:block">
+          <div className="hidden lg:flex items-center gap-4">
+            <a href="https://wa.me/27797517507" target="_blank" rel="noopener noreferrer">
+              <Button className="bg-[#25D366] hover:bg-[#20BD5A] text-white rounded-full px-5">
+                <MessageCircle className="w-4 h-4 mr-2" />
+                WhatsApp Us
+              </Button>
+            </a>
             <Link href="/contact">
-              <Button className="bg-[#A70404] hover:bg-[#8E0303] text-white">
+              <Button className="bg-[#A80000] hover:bg-[#850000] text-white rounded-full px-6">
                 Get a Quote
               </Button>
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
           <button
-            className="lg:hidden p-2"
+            className="lg:hidden p-2 -mr-2"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
           >
             {mobileMenuOpen ? (
-              <X className="w-6 h-6 text-[#243C42]" />
+              <X className="w-6 h-6 text-[#111111]" />
             ) : (
-              <Menu className="w-6 h-6 text-[#243C42]" />
+              <Menu className="w-6 h-6 text-[#111111]" />
             )}
           </button>
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-white border-t border-[#D7DADB]">
-          <nav className="container mx-auto px-4 py-4 flex flex-col gap-4">
+        <div className="lg:hidden bg-white border-t border-[#E8E8E8]">
+          <nav className="container mx-auto px-4 py-4 flex flex-col gap-1">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-[#526669] hover:text-[#A70404] font-medium py-2"
+                className="text-[#111111] hover:text-[#A80000] font-medium py-3 border-b border-[#F7F7F7] last:border-0 transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {link.label}
               </Link>
             ))}
-            <div className="flex flex-col gap-3 pt-4 border-t border-[#D7DADB]">
-              <a href="tel:+27797515707" className="flex items-center gap-2 text-[#526669]">
-                <Phone className="w-4 h-4" />
-                <span>079 751 5707</span>
+            <div className="flex flex-col gap-3 pt-5 pb-2">
+              <a href="tel:+27797517507" className="flex items-center gap-3 text-[#111111] py-1">
+                <Phone className="w-5 h-5 text-[#A80000]" />
+                <span>+27 79 751 7507</span>
               </a>
-              <a href="mailto:info@vyolwetu.co.za" className="flex items-center gap-2 text-[#526669]">
-                <Mail className="w-4 h-4" />
-                <span>info@vyolwetu.co.za</span>
+              <a href="mailto:nqobile@vyolwetu.co.za" className="flex items-center gap-3 text-[#111111] py-1">
+                <Mail className="w-5 h-5 text-[#A80000]" />
+                <span>nqobile@vyolwetu.co.za</span>
               </a>
-              <Link href="/contact">
-                <Button className="bg-[#A70404] hover:bg-[#8E0303] text-white w-full">
-                  Get a Quote
-                </Button>
-              </Link>
+              <div className="flex flex-col gap-2 pt-2">
+                <a href="https://wa.me/27797517507" target="_blank" rel="noopener noreferrer">
+                  <Button className="bg-[#25D366] hover:bg-[#20BD5A] text-white w-full rounded-full">
+                    <MessageCircle className="w-4 h-4 mr-2" />
+                    WhatsApp Us
+                  </Button>
+                </a>
+                <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
+                  <Button className="bg-[#A80000] hover:bg-[#850000] text-white w-full rounded-full">
+                    Get a Quote
+                  </Button>
+                </Link>
+              </div>
             </div>
           </nav>
         </div>

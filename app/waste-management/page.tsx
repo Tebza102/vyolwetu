@@ -1,20 +1,21 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
+import { Phone, ArrowRight, CheckCircle, MessageCircle } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Waste Management Services | Vyolwetu',
-  description: 'Responsible waste collection, recycling, and disposal solutions for businesses and communities across South Africa.',
+  description: 'Vyolwetu provides responsible waste collection, recycling support, site clearing, and disposal coordination for cleaner, better-managed environments.',
 }
 
 const services = [
   'Commercial waste collection',
   'Industrial waste management',
-  'Recycling services',
+  'Recycling support',
   'Construction site waste clearance',
-  'Responsible disposal solutions',
+  'Responsible disposal coordination',
   'Waste audit and consultation'
 ]
 
@@ -37,50 +38,48 @@ const processSteps = [
 export default function WasteManagementPage() {
   return (
     <div>
-      {/* Hero Section */}
-      <section className="relative bg-[#020213] text-white py-20 lg:py-32">
-        <div className="absolute inset-0">
-          <img 
-            src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=1920&q=80" 
-            alt="Waste Management" 
-            className="w-full h-full object-cover opacity-30"
-          />
-        </div>
-        <div className="container mx-auto px-4 relative">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Waste Management
-            </h1>
-            <p className="text-xl text-gray-200 mb-8">
-              Responsible waste collection, recycling, and disposal solutions 
-              for businesses and communities across South Africa.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a href="tel:+27797515707">
-                <Button className="bg-[#A70404] hover:bg-[#8E0303] text-white text-lg px-8 py-6">
-                  <Phone className="w-5 h-5 mr-2" />
-                  Call Now
-                </Button>
-              </a>
-              <Link href="/contact">
-                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-[#020213] text-lg px-8 py-6">
-                  Get a Quote
-                </Button>
-              </Link>
-            </div>
+      <section className="relative bg-white overflow-hidden brand-curve-top-left">
+        <div className="container mx-auto px-4 py-16 lg:py-24 relative z-10">
+          <div className="flex items-center gap-3 mb-4">
+            <span className="brand-accent-line" />
+            <span className="text-xs font-bold text-[#A80000] uppercase tracking-widest">Our Services</span>
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold text-[#111111] mb-4 leading-tight">
+            Waste Management
+          </h1>
+          <p className="text-lg text-[#526669] mb-8 max-w-xl">
+            Responsible waste collection, recycling support, site clearing, and disposal coordination for cleaner, better-managed environments.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a href="tel:+27797517507">
+              <Button className="bg-[#A80000] hover:bg-[#850000] text-white text-base px-8 py-5 rounded-full">
+                <Phone className="w-5 h-5 mr-2" />
+                Call Now
+              </Button>
+            </a>
+            <Link href="/contact">
+              <Button variant="outline" className="border-2 border-[#A80000] text-[#A80000] hover:bg-[#F8EAEA] text-base px-8 py-5 rounded-full">
+                Get a Quote
+              </Button>
+            </Link>
           </div>
         </div>
+        <div className="brand-dots absolute top-8 right-8 w-40 h-40 opacity-30 pointer-events-none hidden lg:block" />
+        <div className="absolute bottom-0 right-0 w-64 h-64 bg-[#F8EAEA] rounded-full -mb-24 -mr-16 opacity-50 pointer-events-none hidden lg:block" />
       </section>
 
-      {/* What We Do */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#020213] mb-6">
-                What We Do
+              <div className="flex items-center gap-3 mb-4">
+                <span className="brand-accent-line" />
+                <span className="text-xs font-bold text-[#A80000] uppercase tracking-widest">What We Do</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#111111] mb-6">
+                Waste Solutions That Work
               </h2>
-              <p className="text-[#526669] mb-6">
+              <p className="text-[#526669] mb-6 leading-relaxed">
                 Vyolwetu provides comprehensive waste management solutions tailored to meet 
                 the unique needs of each client. Our eco-conscious approach ensures responsible 
                 handling while maintaining the highest standards of service delivery.
@@ -88,43 +87,59 @@ export default function WasteManagementPage() {
               <ul className="space-y-3">
                 {services.map((service, index) => (
                   <li key={index} className="flex items-center gap-3 text-[#526669]">
-                    <CheckCircle className="w-5 h-5 text-[#A70404] flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-[#A80000] flex-shrink-0" />
                     <span>{service}</span>
                   </li>
                 ))}
               </ul>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <img 
-                src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=400&q=80" 
-                alt="Recycling" 
-                className="h-40 rounded-lg object-cover"
-              />
-              <img 
-                src="https://images.unsplash.com/photo-1616410634325-3c80a010f37e?w=400&q=80" 
-                alt="Waste Collection" 
-                className="h-40 rounded-lg object-cover"
-              />
-              <img 
-                src="https://images.unsplash.com/photo-1565019627338-6c1a1c7e2f8d?w=400&q=80" 
-                alt="Industrial" 
-                className="h-40 rounded-lg object-cover"
-              />
-              <img 
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80" 
-                alt="Warehousing" 
-                className="h-40 rounded-lg object-cover"
-              />
+              <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md">
+                <Image 
+                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team.png" 
+                  alt="Waste Management Team" 
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md">
+                <Image 
+                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team2.png" 
+                  alt="Waste Collection" 
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md">
+                <Image 
+                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team.png" 
+                  alt="Industrial" 
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md">
+                <Image 
+                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team2.png" 
+                  alt="Recycling" 
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Who We Serve */}
-      <section className="py-16 lg:py-24 bg-[#F7F8F8]">
+      <section className="section-padding bg-[#F7F7F7]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#020213] mb-4">
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <span className="brand-accent-line" />
+              <span className="text-xs font-bold text-[#A80000] uppercase tracking-widest">Industries</span>
+              <span className="brand-accent-line" />
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] mb-4">
               Industries We Serve
             </h2>
             <p className="text-[#526669] max-w-2xl mx-auto">
@@ -133,9 +148,9 @@ export default function WasteManagementPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {industries.map((industry, index) => (
-              <Card key={index} className="text-center p-4 border-[#D7DADB]">
+              <Card key={index} className="text-center p-4 border-[#E8E8E8]">
                 <CardContent className="p-0">
-                  <p className="font-medium text-[#020213]">{industry}</p>
+                  <p className="font-medium text-[#111111] text-sm">{industry}</p>
                 </CardContent>
               </Card>
             ))}
@@ -143,67 +158,84 @@ export default function WasteManagementPage() {
         </div>
       </section>
 
-      {/* Process */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#020213] mb-4">
-              Our Process
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <span className="brand-accent-line" />
+              <span className="text-xs font-bold text-[#A80000] uppercase tracking-widest">Our Process</span>
+              <span className="brand-accent-line" />
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] mb-4">
+              How It Works
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {processSteps.map((step, index) => (
               <div key={index} className="text-center">
-                <div className="w-12 h-12 rounded-full bg-[#A70404] text-white flex items-center justify-center text-xl font-bold mx-auto mb-4">
+                <div className="w-12 h-12 rounded-full bg-[#A80000] text-white flex items-center justify-center text-xl font-bold mx-auto mb-4">
                   {index + 1}
                 </div>
-                <h3 className="font-bold text-[#020213] mb-2">{step.title}</h3>
-                <p className="text-[#526669] text-sm">{step.description}</p>
+                <h3 className="font-bold text-[#111111] mb-2">{step.title}</h3>
+                <p className="text-[#526669] text-sm leading-relaxed">{step.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Proof / Gallery */}
-      <section className="py-16 lg:py-24 bg-[#F7F8F8]">
+      <section className="section-padding bg-[#F7F7F7]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#020213] mb-4">
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <span className="brand-accent-line" />
+              <span className="text-xs font-bold text-[#A80000] uppercase tracking-widest">Gallery</span>
+              <span className="brand-accent-line" />
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] mb-4">
               Our Work
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <img 
-                src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team.png" 
-                alt="Waste Management Team" 
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
-                <h3 className="font-bold text-[#020213] mb-2">Waste Management Team</h3>
-                <p className="text-[#526669] text-sm">Professional Team</p>
+          <div className="grid grid-cols-1 md:grid:grid-cols-3 gap-6">
+            <div className="card-brand overflow-hidden">
+              <div className="relative h-48">
+                <Image 
+                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team.png" 
+                  alt="Waste Management Team" 
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-5">
+                <h3 className="font-bold text-[#111111] mb-1">Professional Team</h3>
+                <p className="text-[#526669] text-sm">Vyolwetu Waste Team</p>
               </div>
             </div>
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <img 
-                src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team.png" 
-                alt="Commercial Collection" 
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
-                <h3 className="font-bold text-[#020213] mb-2">Commercial Collection</h3>
+            <div className="card-brand overflow-hidden">
+              <div className="relative h-48">
+                <Image 
+                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team2.png" 
+                  alt="Commercial Collection" 
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-5">
+                <h3 className="font-bold text-[#111111] mb-1">Commercial Collection</h3>
                 <p className="text-[#526669] text-sm">Johannesburg</p>
               </div>
             </div>
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <img 
-                src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team.png" 
-                alt="Recycling" 
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
-                <h3 className="font-bold text-[#020213] mb-2">Recycling Services</h3>
+            <div className="card-brand overflow-hidden">
+              <div className="relative h-48">
+                <Image 
+                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team.png" 
+                  alt="Recycling Services" 
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-5">
+                <h3 className="font-bold text-[#111111] mb-1">Recycling Services</h3>
                 <p className="text-[#526669] text-sm">Gauteng</p>
               </div>
             </div>
@@ -211,27 +243,32 @@ export default function WasteManagementPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-16 lg:py-24 bg-[#020213]">
+      <section className="section-padding bg-[#111111]">
         <div className="container mx-auto px-4 text-center">
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <span className="brand-accent-line" />
+            <span className="text-xs font-bold text-[#A80000] uppercase tracking-widest">Ready to Start</span>
+            <span className="brand-accent-line" />
+          </div>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Need Waste Management Services?
           </h2>
-          <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
             Contact us today for a customized waste management solution that meets your needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+27797515707">
-              <Button className="bg-[#A70404] hover:bg-[#8E0303] text-white text-lg px-8 py-6">
+            <a href="tel:+27797517507">
+              <Button className="bg-[#A80000] hover:bg-[#850000] text-white text-base px-8 py-5 rounded-full">
                 <Phone className="w-5 h-5 mr-2" />
-                Call Nqobile
+                Call Now
               </Button>
             </a>
-            <Link href="/contact">
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-[#020213] text-lg px-8 py-6">
-                Get a Quote <ArrowRight className="w-5 h-5 ml-2" />
+            <a href="https://wa.me/27797517507?text=Hi%20Vyolwetu,%20I%27d%20like%20to%20inquire%20about%20waste%20management%20services" target="_blank" rel="noopener noreferrer">
+              <Button className="bg-[#25D366] hover:bg-[#20BD5A] text-white text-base px-8 py-5 rounded-full">
+                <MessageCircle className="w-5 h-5 mr-2" />
+                WhatsApp Us
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </section>

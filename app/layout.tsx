@@ -10,9 +10,14 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Vyolwetu | Waste Management, Cleaning & Construction",
-  description: "Eco-conscious service delivery with real community impact. Professional waste management, cleaning, and construction services across South Africa.",
-  keywords: "waste management, cleaning services, construction, CSI, South Africa",
+  title: "Vyolwetu | Waste Management, Cleaning & Construction Support",
+  description: "Vyolwetu provides integrated waste management, professional cleaning, and construction support services for cleaner, safer, and better-managed environments.",
+  keywords: "waste management, cleaning services, construction support, CSI, South Africa",
+  openGraph: {
+    title: "Vyolwetu | Waste Management, Cleaning & Construction Support",
+    description: "Vyolwetu provides integrated waste management, professional cleaning, and construction support services for cleaner, safer, and better-managed environments.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -23,9 +28,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <head>
-        <link rel="icon" href="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.37.08%20PM.jpeg" type="image/jpeg" />
+        <link rel="icon" href="/VyolwetuFavcon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/VyolwetuFavcon.png" />
       </head>
-      <body className="min-h-full flex flex-col bg-[#F7F8F8]">
+      <body className="min-h-full flex flex-col bg-[#F7F7F7]">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
