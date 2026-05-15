@@ -52,7 +52,7 @@ export default function ContactPage() {
 
       <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-[#111111] mb-6">
                 Let&apos;s Talk

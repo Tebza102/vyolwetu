@@ -54,7 +54,7 @@ export default function CSIPage() {
 
       <section className="section-padding bg-white brand-curve-bottom-right">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
             <div className="relative aspect-[3/2] rounded-lg overflow-hidden shadow-lg">
               <Image 
                 src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.37.08%20PM.jpeg" 
@@ -156,7 +156,7 @@ export default function CSIPage() {
 
       <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <span className="brand-accent-line" />

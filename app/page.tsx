@@ -211,7 +211,7 @@ export default function Home() {
       {/* Why Vyolwetu / Trust Block */}
       <section className="section-padding bg-[#F7F7F7]">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <span className="brand-accent-line" />
@@ -377,7 +377,7 @@ export default function Home() {
       {/* CSI Module */}
       <section className="section-padding bg-white brand-curve-top-left">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <span className="brand-accent-line" />
