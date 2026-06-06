@@ -6,7 +6,6 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Phone, ArrowRight, CheckCircle, Leaf, Users, Award, MessageCircle } from 'lucide-react'
 import Link from 'next/link'
-import { DivisionBadge } from '@/components/division-badge'
 import { type DivisionId } from '@/lib/divisions'
 
 const services = [
@@ -15,21 +14,21 @@ const services = [
     divisionId: 'waste' as DivisionId,
     description: 'Responsible waste collection, recycling support, site clearing, and disposal coordination for cleaner, better-managed environments.',
     href: '/waste-management',
-    image: 'https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/MD%20and%20the%20cleaning%20team.PNG'
+    image: '/divisions/logo-waste.png'
   },
   {
     title: 'Professional Cleaning',
     divisionId: 'cleaning' as DivisionId,
     description: 'Commercial and industrial cleaning services that support hygiene, safety, presentation, and facility readiness.',
     href: '/cleaning',
-    image: 'https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/Site%20Cleaning.png'
+    image: '/divisions/logo-cleaning.png'
   },
   {
     title: 'Construction Support & Site Services',
     divisionId: 'construction' as DivisionId,
     description: 'Site clearing, post-construction cleaning, rubble removal coordination, and practical support for active project environments.',
     href: '/construction',
-    image: 'https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Construction/WhatsApp%20Image%202026-04-02%20at%2010.32.41%20AM%20(1).jpeg'
+    image: '/divisions/logo-construction.png'
   }
 ]
 
@@ -110,18 +109,29 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative bg-white overflow-hidden brand-curve-top-left brand-curve-bottom-right">
         <div className="container mx-auto px-4 py-16 lg:py-24 relative z-10">
-          <div className="max-w-3xl">
-            <div className="mb-4">
-              <span className="brand-accent-line" />
-              <span className="text-sm font-semibold text-[#0B2F33] ml-3 tracking-wide uppercase">Passion to Serve</span>
+          <div className="max-w-3xl mx-auto text-center">
+            <div className="mb-6 flex flex-col items-center">
+              <Image 
+                src="/VyolwetuLogo.png" 
+                alt="Vyolwetu - Passion to Serve" 
+                width={180} 
+                height={60} 
+                className="h-auto w-[140px] md:w-[180px] mb-3"
+                priority
+              />
+              <div className="flex items-center gap-3">
+                <span className="brand-accent-line" />
+                <span className="text-sm font-semibold text-[#0B2F33] tracking-wide uppercase">Passion to Serve</span>
+                <span className="brand-accent-line" />
+              </div>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#111111] mb-6 leading-tight">
-              Cleaner Sites.<br />Safer Spaces.<br />Reliable Service.
+              Cleaner Sites.<br className="hidden sm:block" /> Safer Spaces.<br className="hidden sm:block" /> Reliable Service.
             </h1>
-            <p className="text-lg md:text-xl text-[#526669] mb-10 max-w-xl leading-relaxed">
+            <p className="text-lg md:text-xl text-[#526669] mb-10 max-w-xl mx-auto leading-relaxed">
               Integrated waste management, professional cleaning, and construction support services delivered with discipline, care, and a passion to serve.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact">
                 <Button className="bg-[#A80000] hover:bg-[#850000] text-white text-base px-8 py-5 rounded-full w-full sm:w-auto">
                   Request a Quote
@@ -129,7 +139,7 @@ export default function Home() {
               </Link>
               <Link href="/waste-management">
                 <Button variant="outline" className="border-2 border-[#A80000] text-[#A80000] hover:bg-[#F8EAEA] text-base px-8 py-5 rounded-full w-full sm:w-auto">
-                  View Services
+                  View Division
                 </Button>
               </Link>
               <a href="https://wa.me/27797517507?text=Hi%20Vyolwetu,%20I%27d%20like%20to%20inquire%20about%20your%20services" target="_blank" rel="noopener noreferrer">
@@ -183,14 +193,13 @@ export default function Home() {
             {services.map((service) => (
               <Link key={service.title} href={service.href}>
                 <Card className="h-full card-brand group cursor-pointer overflow-hidden">
-                  <div className="relative h-52 overflow-hidden">
+                  <div className="relative h-52 overflow-hidden bg-[#F7F7F7]">
                     <Image 
                       src={service.image} 
                       alt={service.title} 
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      className="object-contain p-6 transition-transform duration-500 group-hover:scale-105"
                     />
-                    <DivisionBadge divisionId={service.divisionId} />
                   </div>
                   <CardContent className="p-6">
                     <h3 className="text-lg font-bold text-[#111111] mb-3 group-hover:text-[#A80000] transition-colors">
@@ -200,7 +209,7 @@ export default function Home() {
                       {service.description}
                     </p>
                     <div className="flex items-center text-[#A80000] font-semibold text-sm">
-                      View Services <ArrowRight className="w-4 h-4 ml-1 group-hover:ml-2 transition-all" />
+                      View Division <ArrowRight className="w-4 h-4 ml-1 group-hover:ml-2 transition-all" />
                     </div>
                   </CardContent>
                 </Card>
@@ -306,79 +315,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Projects Preview */}
-      <section className="section-padding bg-[#F7F7F7]">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <span className="brand-accent-line" />
-              <span className="text-xs font-bold text-[#A80000] uppercase tracking-widest">Our Work</span>
-              <span className="brand-accent-line" />
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] mb-4">
-              Recent Projects
-            </h2>
-            <p className="text-[#526669] max-w-2xl mx-auto">
-              Real results from real projects across all our service divisions.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            <div className="card-brand overflow-hidden">
-              <div className="relative h-48">
-                <Image 
-                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/Office%20Cleaning.png" 
-                  alt="Commercial Building Cleaning" 
-                  fill
-                  className="object-cover"
-                />
-                <DivisionBadge divisionId="cleaning" />
-              </div>
-              <div className="p-5">
-                <h3 className="font-bold text-[#111111] mb-1">Commercial Building Cleaning</h3>
-                <p className="text-[#526669] text-sm">Johannesburg CBD</p>
-              </div>
-            </div>
-            <div className="card-brand overflow-hidden">
-              <div className="relative h-48">
-                <Image 
-                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team.png" 
-                  alt="Industrial Waste Management" 
-                  fill
-                  className="object-cover"
-                />
-                <DivisionBadge divisionId="waste" />
-              </div>
-              <div className="p-5">
-                <h3 className="font-bold text-[#111111] mb-1">Industrial Waste Management</h3>
-                <p className="text-[#526669] text-sm">Mpumalanga</p>
-              </div>
-            </div>
-            <div className="card-brand overflow-hidden">
-              <div className="relative h-48">
-                <Image 
-                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Construction/WhatsApp%20Image%202026-02-06%20at%206.02.33%20PM.jpeg" 
-                  alt="Site Clearing & Development" 
-                  fill
-                  className="object-cover"
-                />
-                <DivisionBadge divisionId="construction" />
-              </div>
-              <div className="p-5">
-                <h3 className="font-bold text-[#111111] mb-1">Site Clearing & Development</h3>
-                <p className="text-[#526669] text-sm">Gauteng</p>
-              </div>
-            </div>
-          </div>
-          <div className="text-center">
-            <Link href="/projects">
-              <Button variant="outline" className="border-2 border-[#A80000] text-[#A80000] hover:bg-[#F8EAEA] rounded-full px-8">
-                View All Projects <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* CSI Module */}
       <section className="section-padding bg-white brand-curve-top-left">
         <div className="container mx-auto px-4">
@@ -402,8 +338,8 @@ export default function Home() {
                 </Button>
               </Link>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="relative aspect-[3/2] rounded-lg overflow-hidden shadow-md">
+            <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-4">
+              <div className="md:row-span-2 relative rounded-lg overflow-hidden shadow-md">
                 <Image 
                   src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.37.08%20PM.jpeg" 
                   alt="1000 School Bags Campaign" 

@@ -11,7 +11,7 @@ export default function Footer() {
             <img 
               src="/VyolwetuLogo.png" 
               alt="Vyolwetu - Passion to Serve" 
-              className="h-10 w-auto object-contain mb-4 brightness-0 invert" 
+              className="h-10 w-auto object-contain mb-4" 
             />
             <p className="text-[#A80000] font-semibold text-sm mb-3 tracking-wide">Passion to Serve</p>
             <p className="text-gray-400 text-sm leading-relaxed mb-5 max-w-xs">
@@ -47,11 +47,6 @@ export default function Footer() {
           <div>
             <h3 className="text-sm font-bold uppercase tracking-widest text-gray-300 mb-5">Quick Links</h3>
             <ul className="space-y-3">
-              <li>
-                <Link href="/projects" className="text-gray-400 hover:text-[#A80000] transition-colors text-sm inline-block">
-                  Our Projects
-                </Link>
-              </li>
               <li>
                 <Link href="/csi" className="text-gray-400 hover:text-[#A80000] transition-colors text-sm inline-block">
                   CSI & Community

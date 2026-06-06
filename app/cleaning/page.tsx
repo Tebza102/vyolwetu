@@ -4,8 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Phone, ArrowRight, CheckCircle, MessageCircle, Building2, Factory, Sparkles, Wind, HardHat, Shield, LayoutGrid, ArrowUp, Calendar, ClipboardCheck, Leaf, MapPin, Globe, Users, Clock } from 'lucide-react'
 import Link from 'next/link'
-import { DivisionBadge } from '@/components/division-badge'
-import { DivisionHeroIcon } from '@/components/division-hero-icon'
+
 
 export const metadata: Metadata = {
   title: 'Vyolwetu Cleaning Services | Office, Industrial & Post-Construction Cleaning',
@@ -160,7 +159,6 @@ export default function CleaningPage() {
       <section className="relative bg-[#F0F9FF] overflow-hidden">
         <div className="container mx-auto px-4 py-16 lg:py-24 relative z-10">
           <div className="max-w-3xl">
-            <DivisionHeroIcon divisionId="cleaning" className="mb-5" />
             <div className="flex items-center gap-3 mb-4">
               <span className="inline-block w-10 h-1 bg-[#0C8CB5] rounded-full" />
               <span className="text-xs font-bold text-[#0C8CB5] uppercase tracking-widest">Vyolwetu Cleaning Services</span>
@@ -382,7 +380,6 @@ export default function CleaningPage() {
                   fill
                   className="object-cover"
                 />
-                <DivisionBadge divisionId="cleaning" />
               </div>
               <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md">
                 <Image 
@@ -391,7 +388,6 @@ export default function CleaningPage() {
                   fill
                   className="object-cover"
                 />
-                <DivisionBadge divisionId="cleaning" />
               </div>
             </div>
           </div>
@@ -494,14 +490,13 @@ export default function CleaningPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="card-brand overflow-hidden">
-              <div className="relative h-48">
+              <div className="relative aspect-[4/3]">
                 <Image 
                   src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/MD%20and%20the%20cleaning%20team.PNG" 
                   alt="Professional cleaning team" 
                   fill
                   className="object-cover"
                 />
-                <DivisionBadge divisionId="cleaning" />
               </div>
               <div className="p-5">
                 <h3 className="font-bold text-[#111111] mb-1">Professional Cleaning Team</h3>
@@ -509,14 +504,13 @@ export default function CleaningPage() {
               </div>
             </div>
             <div className="card-brand overflow-hidden">
-              <div className="relative h-48">
+              <div className="relative aspect-[4/3]">
                 <Image 
                   src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/Office%20Cleaning.png" 
                   alt="Office cleaning services" 
                   fill
                   className="object-cover"
                 />
-                <DivisionBadge divisionId="cleaning" />
               </div>
               <div className="p-5">
                 <h3 className="font-bold text-[#111111] mb-1">Office Cleaning</h3>
@@ -524,14 +518,13 @@ export default function CleaningPage() {
               </div>
             </div>
             <div className="card-brand overflow-hidden">
-              <div className="relative h-48">
+              <div className="relative aspect-[4/3]">
                 <Image 
                   src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/Site%20Cleaning.png" 
                   alt="Site cleaning services" 
                   fill
                   className="object-cover"
                 />
-                <DivisionBadge divisionId="cleaning" />
               </div>
               <div className="p-5">
                 <h3 className="font-bold text-[#111111] mb-1">Site Cleaning</h3>

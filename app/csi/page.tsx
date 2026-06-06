@@ -55,7 +55,7 @@ export default function CSIPage() {
       <section className="section-padding bg-white brand-curve-bottom-right">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
-            <div className="relative aspect-[3/2] rounded-lg overflow-hidden shadow-lg">
+            <div className="relative aspect-[3/4] rounded-lg overflow-hidden shadow-lg">
               <Image 
                 src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.37.08%20PM.jpeg" 
                 alt="1000 School Bags Campaign" 
@@ -197,8 +197,8 @@ export default function CSIPage() {
                 </a>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
+            <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-4">
+              <div className="md:row-span-2 relative rounded-lg overflow-hidden shadow-md">
                 <Image 
                   src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.37.08%20PM.jpeg" 
                   alt="School Bags" 
@@ -206,7 +206,7 @@ export default function CSIPage() {
                   className="object-cover"
                 />
               </div>
-              <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
+              <div className="relative aspect-[3/2] rounded-lg overflow-hidden shadow-md">
                 <Image 
                   src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.40%20PM.jpeg" 
                   alt="Community" 
@@ -214,18 +214,10 @@ export default function CSIPage() {
                   className="object-cover"
                 />
               </div>
-              <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
+              <div className="relative aspect-[3/2] rounded-lg overflow-hidden shadow-md">
                 <Image 
                   src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.38%20PM.jpeg" 
                   alt="Education" 
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
-                <Image 
-                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.37.08%20PM.jpeg" 
-                  alt="Partnership" 
                   fill
                   className="object-cover"
                 />

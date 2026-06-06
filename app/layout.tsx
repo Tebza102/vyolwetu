@@ -13,6 +13,10 @@ export const metadata: Metadata = {
   title: "Vyolwetu | Waste Management, Cleaning & Construction Support",
   description: "Vyolwetu provides integrated waste management, professional cleaning, and construction support services for cleaner, safer, and better-managed environments.",
   keywords: "waste management, cleaning services, construction support, CSI, South Africa",
+  icons: {
+    icon: "/VyolwetuFavcon.png",
+    apple: "/VyolwetuFavcon.png",
+  },
   openGraph: {
     title: "Vyolwetu | Waste Management, Cleaning & Construction Support",
     description: "Vyolwetu provides integrated waste management, professional cleaning, and construction support services for cleaner, safer, and better-managed environments.",
@@ -27,10 +31,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.variable}>
-      <head>
-        <link rel="icon" href="/VyolwetuFavcon.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/VyolwetuFavcon.png" />
-      </head>
       <body className="min-h-full flex flex-col bg-[#F7F7F7]">
         <Header />
         <main className="flex-1">{children}</main>

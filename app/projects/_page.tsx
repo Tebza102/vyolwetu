@@ -4,7 +4,6 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { ArrowRight, Phone, MessageCircle } from 'lucide-react'
 import Link from 'next/link'
-import { DivisionBadge } from '@/components/division-badge'
 import { type DivisionId } from '@/lib/divisions'
 
 export const metadata: Metadata = {
@@ -133,14 +132,13 @@ export default function ProjectsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, index) => (
               <Card key={index} className="border-[#E8E8E8] overflow-hidden">
-                <div className="relative h-48">
+                <div className="relative aspect-[4/3]">
                   <Image 
                     src={project.image}
                     alt={project.title}
                     fill
                     className="object-cover"
                   />
-                  <DivisionBadge divisionId={project.divisionId} />
                   <div className="absolute top-3 left-3">
                     <span className="px-3 py-1 rounded-full text-xs font-semibold text-white" style={{ backgroundColor: project.color }}>
                       {project.category}

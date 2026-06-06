@@ -10,7 +10,6 @@ const navLinks = [
   { href: '/waste-management', label: 'Waste Management' },
   { href: '/cleaning', label: 'Cleaning' },
   { href: '/construction', label: 'Construction' },
-  { href: '/projects', label: 'Projects' },
   { href: '/csi', label: 'CSI' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },

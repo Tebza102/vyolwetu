@@ -4,8 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Phone, ArrowRight, CheckCircle, MessageCircle, Leaf, Truck, Recycle, Building2, Factory, HardHat, MapPin, ClipboardCheck, BarChart3, Shield, Users, Globe, Clock } from 'lucide-react'
 import Link from 'next/link'
-import { DivisionBadge } from '@/components/division-badge'
-import { DivisionHeroIcon } from '@/components/division-hero-icon'
+
 
 export const metadata: Metadata = {
   title: 'Vyolwetu Waste Management | Waste Collection, Recycling & Site Clearance',
@@ -153,7 +152,6 @@ export default function WasteManagementPage() {
       <section className="relative bg-[#ECFDF5] overflow-hidden">
         <div className="container mx-auto px-4 py-16 lg:py-24 relative z-10">
           <div className="max-w-3xl">
-            <DivisionHeroIcon divisionId="waste" className="mb-5" />
             <div className="flex items-center gap-3 mb-4">
               <span className="inline-block w-10 h-1 bg-[#1E8C4A] rounded-full" />
               <span className="text-xs font-bold text-[#1E8C4A] uppercase tracking-widest">Vyolwetu Waste Management</span>
@@ -375,7 +373,6 @@ export default function WasteManagementPage() {
                   fill
                   className="object-cover"
                 />
-                <DivisionBadge divisionId="waste" />
               </div>
               <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md">
                 <Image 
@@ -384,7 +381,6 @@ export default function WasteManagementPage() {
                   fill
                   className="object-cover"
                 />
-                <DivisionBadge divisionId="waste" />
               </div>
             </div>
           </div>
@@ -487,14 +483,13 @@ export default function WasteManagementPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="card-brand overflow-hidden">
-              <div className="relative h-48">
+              <div className="relative aspect-[4/3]">
                 <Image 
                   src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team.png" 
                   alt="Waste management team" 
                   fill
                   className="object-cover"
                 />
-                <DivisionBadge divisionId="waste" />
               </div>
               <div className="p-5">
                 <h3 className="font-bold text-[#111111] mb-1">Waste Collection Team</h3>
@@ -502,14 +497,13 @@ export default function WasteManagementPage() {
               </div>
             </div>
             <div className="card-brand overflow-hidden">
-              <div className="relative h-48">
+              <div className="relative aspect-[4/3]">
                 <Image 
                   src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team2.png" 
                   alt="Commercial waste collection" 
                   fill
                   className="object-cover"
                 />
-                <DivisionBadge divisionId="waste" />
               </div>
               <div className="p-5">
                 <h3 className="font-bold text-[#111111] mb-1">Commercial Collection</h3>
@@ -517,14 +511,13 @@ export default function WasteManagementPage() {
               </div>
             </div>
             <div className="card-brand overflow-hidden">
-              <div className="relative h-48">
+              <div className="relative aspect-[4/3]">
                 <Image 
                   src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team.png" 
                   alt="Site waste management" 
                   fill
                   className="object-cover"
                 />
-                <DivisionBadge divisionId="waste" />
               </div>
               <div className="p-5">
                 <h3 className="font-bold text-[#111111] mb-1">Site Waste Management</h3>
