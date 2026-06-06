@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Phone, ArrowRight, CheckCircle, MessageCircle } from 'lucide-react'
 import Link from 'next/link'
+import { DivisionBadge } from '@/components/division-badge'
 
 export const metadata: Metadata = {
   title: 'Waste Management Services | Vyolwetu',
@@ -101,6 +102,7 @@ export default function WasteManagementPage() {
                   fill
                   className="object-cover"
                 />
+                <DivisionBadge divisionId="waste" />
               </div>
               <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md">
                 <Image 
@@ -109,22 +111,17 @@ export default function WasteManagementPage() {
                   fill
                   className="object-cover"
                 />
+                <DivisionBadge divisionId="waste" />
               </div>
-              <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md">
-                <Image 
-                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team.png" 
-                  alt="Industrial" 
-                  fill
-                  className="object-cover"
-                />
+              <div className="rounded-lg border border-[#E8E8E8] bg-white p-4">
+                <p className="text-xs font-bold text-[#2F6F5E] uppercase tracking-wide mb-2">Compliance</p>
+                <h3 className="text-[#111111] font-semibold mb-2">Responsible Handling</h3>
+                <p className="text-[#526669] text-sm">Collection and disposal coordination aligned to safe, documented site practices.</p>
               </div>
-              <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md">
-                <Image 
-                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team2.png" 
-                  alt="Recycling" 
-                  fill
-                  className="object-cover"
-                />
+              <div className="rounded-lg border border-[#E8E8E8] bg-white p-4">
+                <p className="text-xs font-bold text-[#0B2F33] uppercase tracking-wide mb-2">Impact</p>
+                <h3 className="text-[#111111] font-semibold mb-2">Cleaner Operational Sites</h3>
+                <p className="text-[#526669] text-sm">Reliable scheduling and sorting support reduce clutter and improve day-to-day site readiness.</p>
               </div>
             </div>
           </div>
@@ -205,6 +202,7 @@ export default function WasteManagementPage() {
                   fill
                   className="object-cover"
                 />
+                <DivisionBadge divisionId="waste" />
               </div>
               <div className="p-5">
                 <h3 className="font-bold text-[#111111] mb-1">Professional Team</h3>
@@ -219,6 +217,7 @@ export default function WasteManagementPage() {
                   fill
                   className="object-cover"
                 />
+                <DivisionBadge divisionId="waste" />
               </div>
               <div className="p-5">
                 <h3 className="font-bold text-[#111111] mb-1">Commercial Collection</h3>
@@ -233,6 +232,7 @@ export default function WasteManagementPage() {
                   fill
                   className="object-cover"
                 />
+                <DivisionBadge divisionId="waste" />
               </div>
               <div className="p-5">
                 <h3 className="font-bold text-[#111111] mb-1">Recycling Services</h3>

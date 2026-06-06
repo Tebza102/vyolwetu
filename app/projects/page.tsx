@@ -4,6 +4,8 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { ArrowRight, Phone, MessageCircle } from 'lucide-react'
 import Link from 'next/link'
+import { DivisionBadge } from '@/components/division-badge'
+import { type DivisionId } from '@/lib/divisions'
 
 export const metadata: Metadata = {
   title: 'Our Projects | Vyolwetu',
@@ -14,6 +16,7 @@ const projects = [
   {
     title: 'Commercial Building Cleaning',
     category: 'Cleaning',
+    divisionId: 'cleaning' as DivisionId,
     location: 'Johannesburg CBD',
     description: 'Complete cleaning services for a 20-story commercial building.',
     color: '#334A4F',
@@ -22,6 +25,7 @@ const projects = [
   {
     title: 'Industrial Waste Management',
     category: 'Waste Management',
+    divisionId: 'waste' as DivisionId,
     location: 'Mpumalanga',
     description: 'Responsible waste collection and recycling for manufacturing facility.',
     color: '#A80000',
@@ -30,6 +34,7 @@ const projects = [
   {
     title: 'Site Clearing & Development',
     category: 'Construction',
+    divisionId: 'construction' as DivisionId,
     location: 'Gauteng',
     description: 'Complete site clearing and preparation for new development.',
     color: '#2F6F5E',
@@ -38,6 +43,7 @@ const projects = [
   {
     title: 'Office Sanitization Services',
     category: 'Cleaning',
+    divisionId: 'cleaning' as DivisionId,
     location: 'Sandton',
     description: 'Regular sanitization and hygiene services for corporate offices.',
     color: '#334A4F',
@@ -46,6 +52,7 @@ const projects = [
   {
     title: 'Construction Site Waste Clearance',
     category: 'Waste Management',
+    divisionId: 'waste' as DivisionId,
     location: 'Pretoria',
     description: 'Efficient waste management and clearing for construction sites.',
     color: '#A80000',
@@ -54,6 +61,7 @@ const projects = [
   {
     title: 'Site Support Services',
     category: 'Construction',
+    divisionId: 'construction' as DivisionId,
     location: 'Midrand',
     description: 'Practical site support and assistance for active project environments.',
     color: '#2F6F5E',
@@ -62,6 +70,7 @@ const projects = [
   {
     title: 'Industrial Deep Cleaning',
     category: 'Cleaning',
+    divisionId: 'cleaning' as DivisionId,
     location: 'Alberton',
     description: 'Comprehensive deep cleaning of industrial facility and warehouses.',
     color: '#334A4F',
@@ -70,6 +79,7 @@ const projects = [
   {
     title: 'Municipal Waste Collection',
     category: 'Waste Management',
+    divisionId: 'waste' as DivisionId,
     location: 'Ekurhuleni',
     description: 'Scheduled waste collection services for municipal areas.',
     color: '#A80000',
@@ -78,6 +88,7 @@ const projects = [
   {
     title: 'Post-Construction Cleaning',
     category: 'Cleaning',
+    divisionId: 'cleaning' as DivisionId,
     location: 'Centurion',
     description: 'Complete cleaning and handover services after construction.',
     color: '#334A4F',
@@ -129,6 +140,7 @@ export default function ProjectsPage() {
                     fill
                     className="object-cover"
                   />
+                  <DivisionBadge divisionId={project.divisionId} />
                   <div className="absolute top-3 left-3">
                     <span className="px-3 py-1 rounded-full text-xs font-semibold text-white" style={{ backgroundColor: project.color }}>
                       {project.category}

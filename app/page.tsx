@@ -6,22 +6,27 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Phone, ArrowRight, CheckCircle, Leaf, Users, Award, MessageCircle } from 'lucide-react'
 import Link from 'next/link'
+import { DivisionBadge } from '@/components/division-badge'
+import { type DivisionId } from '@/lib/divisions'
 
 const services = [
   {
     title: 'Waste Management',
+    divisionId: 'waste' as DivisionId,
     description: 'Responsible waste collection, recycling support, site clearing, and disposal coordination for cleaner, better-managed environments.',
     href: '/waste-management',
     image: 'https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/MD%20and%20the%20cleaning%20team.PNG'
   },
   {
     title: 'Professional Cleaning',
+    divisionId: 'cleaning' as DivisionId,
     description: 'Commercial and industrial cleaning services that support hygiene, safety, presentation, and facility readiness.',
     href: '/cleaning',
     image: 'https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/Site%20Cleaning.png'
   },
   {
     title: 'Construction Support & Site Services',
+    divisionId: 'construction' as DivisionId,
     description: 'Site clearing, post-construction cleaning, rubble removal coordination, and practical support for active project environments.',
     href: '/construction',
     image: 'https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Construction/WhatsApp%20Image%202026-04-02%20at%2010.32.41%20AM%20(1).jpeg'
@@ -182,13 +187,7 @@ export default function Home() {
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute top-4 left-4">
-                      <div className="w-10 h-10 rounded-lg bg-[#A80000] flex items-center justify-center shadow-md">
-                        <span className="text-white font-bold text-lg">
-                          {service.title.charAt(0)}
-                        </span>
-                      </div>
-                    </div>
+                    <DivisionBadge divisionId={service.divisionId} />
                   </div>
                   <CardContent className="p-6">
                     <h3 className="text-lg font-bold text-[#111111] mb-3 group-hover:text-[#A80000] transition-colors">
@@ -329,6 +328,7 @@ export default function Home() {
                   fill
                   className="object-cover"
                 />
+                <DivisionBadge divisionId="cleaning" />
               </div>
               <div className="p-5">
                 <h3 className="font-bold text-[#111111] mb-1">Commercial Building Cleaning</h3>
@@ -343,6 +343,7 @@ export default function Home() {
                   fill
                   className="object-cover"
                 />
+                <DivisionBadge divisionId="waste" />
               </div>
               <div className="p-5">
                 <h3 className="font-bold text-[#111111] mb-1">Industrial Waste Management</h3>
@@ -357,6 +358,7 @@ export default function Home() {
                   fill
                   className="object-cover"
                 />
+                <DivisionBadge divisionId="construction" />
               </div>
               <div className="p-5">
                 <h3 className="font-bold text-[#111111] mb-1">Site Clearing & Development</h3>
