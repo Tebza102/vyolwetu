@@ -339,7 +339,7 @@ export default function Home() {
               </Link>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-4">
-              <div className="md:row-span-2 relative rounded-lg overflow-hidden shadow-md">
+              <div className="aspect-[3/4] md:aspect-auto md:row-span-2 relative rounded-lg overflow-hidden shadow-md">
                 <Image 
                   src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.37.08%20PM.jpeg" 
                   alt="1000 School Bags Campaign" 
