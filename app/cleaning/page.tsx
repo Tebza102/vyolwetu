@@ -5,6 +5,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Phone, ArrowRight, CheckCircle, MessageCircle, Building2, Factory, Sparkles, Wind, HardHat, Shield, LayoutGrid, ArrowUp, Calendar, ClipboardCheck, Leaf, MapPin, Globe, Users, Clock } from 'lucide-react'
 import Link from 'next/link'
 import { DivisionBadge } from '@/components/division-badge'
+import { DivisionHeroIcon } from '@/components/division-hero-icon'
 
 export const metadata: Metadata = {
   title: 'Vyolwetu Cleaning Services | Office, Industrial & Post-Construction Cleaning',
@@ -159,6 +160,7 @@ export default function CleaningPage() {
       <section className="relative bg-[#F0F9FF] overflow-hidden">
         <div className="container mx-auto px-4 py-16 lg:py-24 relative z-10">
           <div className="max-w-3xl">
+            <DivisionHeroIcon divisionId="cleaning" className="mb-5" />
             <div className="flex items-center gap-3 mb-4">
               <span className="inline-block w-10 h-1 bg-[#0C8CB5] rounded-full" />
               <span className="text-xs font-bold text-[#0C8CB5] uppercase tracking-widest">Vyolwetu Cleaning Services</span>

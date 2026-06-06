@@ -5,6 +5,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Phone, ArrowRight, CheckCircle, MessageCircle, Leaf, Truck, Recycle, Building2, Factory, HardHat, MapPin, ClipboardCheck, BarChart3, Shield, Users, Globe, Clock } from 'lucide-react'
 import Link from 'next/link'
 import { DivisionBadge } from '@/components/division-badge'
+import { DivisionHeroIcon } from '@/components/division-hero-icon'
 
 export const metadata: Metadata = {
   title: 'Vyolwetu Waste Management | Waste Collection, Recycling & Site Clearance',
@@ -152,6 +153,7 @@ export default function WasteManagementPage() {
       <section className="relative bg-[#ECFDF5] overflow-hidden">
         <div className="container mx-auto px-4 py-16 lg:py-24 relative z-10">
           <div className="max-w-3xl">
+            <DivisionHeroIcon divisionId="waste" className="mb-5" />
             <div className="flex items-center gap-3 mb-4">
               <span className="inline-block w-10 h-1 bg-[#1E8C4A] rounded-full" />
               <span className="text-xs font-bold text-[#1E8C4A] uppercase tracking-widest">Vyolwetu Waste Management</span>

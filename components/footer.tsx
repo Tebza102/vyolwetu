@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Phone, Mail, MapPin } from 'lucide-react'
+import { Phone, Mail, MapPin, ArrowRight } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -97,6 +97,33 @@ export default function Footer() {
                 </div>
               </li>
             </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className="border-t border-gray-800">
+        <div className="container mx-auto px-4 py-10">
+          <div className="max-w-2xl mx-auto text-center">
+            <h3 className="text-xl md:text-2xl font-bold text-white mb-3">
+              Ready to get started?
+            </h3>
+            <p className="text-gray-400 mb-6">
+              Contact Vyolwetu for waste management, cleaning, or construction support.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/contact">
+                <button className="bg-[#A80000] hover:bg-[#850000] text-white text-base px-8 py-3 rounded-full font-medium transition-colors inline-flex items-center gap-2">
+                  <ArrowRight className="w-5 h-5" />
+                  Request a Quote
+                </button>
+              </Link>
+              <a href="tel:+27797517507">
+                <button className="border border-gray-600 hover:border-[#A80000] text-gray-300 hover:text-white text-base px-8 py-3 rounded-full font-medium transition-colors inline-flex items-center gap-2">
+                  <Phone className="w-5 h-5" />
+                  Call Now
+                </button>
+              </a>
+            </div>
           </div>
         </div>
       </div>

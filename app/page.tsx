@@ -144,6 +144,9 @@ export default function Home() {
         <div className="brand-dots absolute top-12 right-12 w-48 h-48 opacity-40 pointer-events-none hidden lg:block" />
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#F8EAEA] rounded-full -mb-32 -ml-16 opacity-60 pointer-events-none hidden lg:block" />
         <div className="absolute top-0 right-0 w-48 h-48 bg-[#F8EAEA] rounded-full -mt-12 -mr-12 opacity-60 pointer-events-none hidden lg:block" />
+        <div className="absolute bottom-0 right-1/4 w-32 h-32 bg-[#A86A00]/10 rounded-full -mb-16 pointer-events-none hidden lg:block" />
+        <div className="absolute top-1/3 left-1/4 w-24 h-24 bg-[#1E8C4A]/10 rounded-full pointer-events-none hidden lg:block" />
+        <div className="absolute bottom-1/4 right-0 w-28 h-28 bg-[#0C8CB5]/10 rounded-full -mr-14 pointer-events-none hidden lg:block" />
       </section>
 
       {/* Trust Strip */}
