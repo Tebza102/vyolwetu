@@ -85,7 +85,7 @@ export default function AboutPage() {
               </Link>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md">
+              <div className="relative min-h-[200px] aspect-[4/3] rounded-lg overflow-hidden shadow-md">
                 <Image 
                   src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/Office%20Cleaning.png" 
                   alt="Commercial Cleaning" 
@@ -93,7 +93,7 @@ export default function AboutPage() {
                   className="object-cover"
                 />
               </div>
-              <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md">
+              <div className="relative min-h-[200px] aspect-[4/3] rounded-lg overflow-hidden shadow-md">
                 <Image 
                   src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team.png" 
                   alt="Waste Management" 
@@ -101,7 +101,7 @@ export default function AboutPage() {
                   className="object-cover"
                 />
               </div>
-              <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md">
+              <div className="relative min-h-[200px] aspect-[4/3] rounded-lg overflow-hidden shadow-md">
                 <Image 
                   src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/MD%20and%20the%20cleaning%20team.PNG" 
                   alt="Cleaning Team" 
@@ -109,7 +109,7 @@ export default function AboutPage() {
                   className="object-cover"
                 />
               </div>
-              <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md">
+              <div className="relative min-h-[200px] aspect-[4/3] rounded-lg overflow-hidden shadow-md">
                 <Image 
                   src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Construction/WhatsApp%20Image%202026-02-06%20at%206.02.33%20PM.jpeg" 
                   alt="Construction Support" 
@@ -207,7 +207,7 @@ export default function AboutPage() {
               </Link>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-3 gap-4">
-              <div className="aspect-[3/4] md:aspect-auto md:row-span-3 relative rounded-lg overflow-hidden shadow-md">
+              <div className="min-h-[300px] aspect-[3/4] md:aspect-auto md:row-span-3 relative rounded-lg overflow-hidden shadow-md">
                 <Image 
                   src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.37.08%20PM.jpeg" 
                   alt="Environment" 
@@ -215,7 +215,7 @@ export default function AboutPage() {
                   className="object-cover"
                 />
               </div>
-              <div className="relative aspect-[3/2] rounded-lg overflow-hidden shadow-md">
+              <div className="relative min-h-[180px] aspect-[3/2] rounded-lg overflow-hidden shadow-md">
                 <Image 
                   src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.40%20PM.jpeg" 
                   alt="Community" 
@@ -223,7 +223,7 @@ export default function AboutPage() {
                   className="object-cover"
                 />
               </div>
-              <div className="relative aspect-[3/2] rounded-lg overflow-hidden shadow-md">
+              <div className="relative min-h-[180px] aspect-[3/2] rounded-lg overflow-hidden shadow-md">
                 <Image 
                   src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.38%20PM.jpeg" 
                   alt="Education" 
@@ -231,7 +231,7 @@ export default function AboutPage() {
                   className="object-cover"
                 />
               </div>
-              <div className="relative aspect-[3/2] rounded-lg overflow-hidden shadow-md">
+              <div className="relative min-h-[180px] aspect-[3/2] rounded-lg overflow-hidden shadow-md">
                 <Image 
                   src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/MD%20and%20the%20cleaning%20team.PNG" 
                   alt="Skills" 

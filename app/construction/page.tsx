@@ -313,7 +313,7 @@ export default function ConstructionPage() {
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md">
+              <div className="relative min-h-[200px] aspect-[4/3] rounded-lg overflow-hidden shadow-md">
                 <Image 
                   src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Construction/WhatsApp%20Image%202026-02-06%20at%206.02.33%20PM.jpeg" 
                   alt="Construction site work" 
@@ -321,7 +321,7 @@ export default function ConstructionPage() {
                   className="object-cover"
                 />
               </div>
-              <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md">
+              <div className="relative min-h-[200px] aspect-[4/3] rounded-lg overflow-hidden shadow-md">
                 <Image 
                   src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Construction/WhatsApp%20Image%202026-04-02%20at%2010.32.41%20AM%20(1).jpeg" 
                   alt="Infrastructure project" 
@@ -443,7 +443,7 @@ export default function ConstructionPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="card-brand overflow-hidden">
-              <div className="relative aspect-[4/3]">
+              <div className="relative min-h-[200px] aspect-[4/3]">
                 <Image 
                   src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Construction/WhatsApp%20Image%202026-02-06%20at%206.02.33%20PM.jpeg" 
                   alt="Site Development" 
@@ -457,7 +457,7 @@ export default function ConstructionPage() {
               </div>
             </div>
             <div className="card-brand overflow-hidden">
-              <div className="relative aspect-[4/3]">
+              <div className="relative min-h-[200px] aspect-[4/3]">
                 <Image 
                   src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Construction/WhatsApp%20Image%202026-04-02%20at%2010.32.41%20AM%20(1).jpeg" 
                   alt="Construction Support" 
@@ -471,7 +471,7 @@ export default function ConstructionPage() {
               </div>
             </div>
             <div className="card-brand overflow-hidden">
-              <div className="relative aspect-[4/3]">
+              <div className="relative min-h-[200px] aspect-[4/3]">
                 <Image 
                   src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Construction/WhatsApp%20Image%202026-02-06%20at%206.02.33%20PM.jpeg" 
                   alt="Site Preparation" 

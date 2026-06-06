@@ -373,7 +373,7 @@ export default function CleaningPage() {
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md">
+              <div className="relative min-h-[200px] aspect-[4/3] rounded-lg overflow-hidden shadow-md">
                 <Image 
                   src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/MD%20and%20the%20cleaning%20team.PNG" 
                   alt="Professional cleaning team" 
@@ -381,7 +381,7 @@ export default function CleaningPage() {
                   className="object-cover"
                 />
               </div>
-              <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md">
+              <div className="relative min-h-[200px] aspect-[4/3] rounded-lg overflow-hidden shadow-md">
                 <Image 
                   src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/Site%20Cleaning.png" 
                   alt="Site cleaning services" 
@@ -490,7 +490,7 @@ export default function CleaningPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="card-brand overflow-hidden">
-              <div className="relative aspect-[4/3]">
+              <div className="relative min-h-[200px] aspect-[4/3]">
                 <Image 
                   src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/MD%20and%20the%20cleaning%20team.PNG" 
                   alt="Professional cleaning team" 
@@ -504,7 +504,7 @@ export default function CleaningPage() {
               </div>
             </div>
             <div className="card-brand overflow-hidden">
-              <div className="relative aspect-[4/3]">
+              <div className="relative min-h-[200px] aspect-[4/3]">
                 <Image 
                   src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/Office%20Cleaning.png" 
                   alt="Office cleaning services" 
@@ -518,7 +518,7 @@ export default function CleaningPage() {
               </div>
             </div>
             <div className="card-brand overflow-hidden">
-              <div className="relative aspect-[4/3]">
+              <div className="relative min-h-[200px] aspect-[4/3]">
                 <Image 
                   src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/Site%20Cleaning.png" 
                   alt="Site cleaning services" 
