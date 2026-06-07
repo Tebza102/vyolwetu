@@ -1,11 +1,11 @@
 'use client'
 
-import { useState } from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Phone, ArrowRight, CheckCircle, Leaf, Users, Award, MessageCircle } from 'lucide-react'
 import Link from 'next/link'
+import { DivisionQuoteForm } from '@/components/division-quote-form'
 import { type DivisionId } from '@/lib/divisions'
 
 const services = [
@@ -78,32 +78,6 @@ const csiPillars = [
 ]
 
 export default function Home() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    service: '',
-    location: '',
-    message: ''
-  })
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    try {
-      const response = await fetch('/api/quote', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
-      })
-      if (response.ok) {
-        alert('Quote request submitted successfully! We will contact you soon.')
-        setFormData({ name: '', email: '', phone: '', service: '', location: '', message: '' })
-      }
-    } catch {
-      alert('Something went wrong. Please try again.')
-    }
-  }
-
   return (
     <div>
       {/* Hero Section */}
@@ -341,7 +315,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-4">
               <div className="min-h-[300px] aspect-[3/4] md:aspect-auto md:row-span-2 relative rounded-lg overflow-hidden shadow-md">
                 <Image 
-                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.37.08%20PM.jpeg" 
+                  src="/images/csi-school-bags.webp"
                   alt="1000 School Bags Campaign" 
                   fill
                   className="object-cover"
@@ -349,7 +323,7 @@ export default function Home() {
               </div>
               <div className="relative min-h-[180px] aspect-[3/2] rounded-lg overflow-hidden shadow-md">
                 <Image 
-                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.40%20PM.jpeg" 
+                  src="/images/csi-community.webp"
                   alt="Community" 
                   fill
                   className="object-cover"
@@ -357,7 +331,7 @@ export default function Home() {
               </div>
               <div className="relative min-h-[180px] aspect-[3/2] rounded-lg overflow-hidden shadow-md">
                 <Image 
-                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.38%20PM.jpeg" 
+                  src="/images/csi-education.webp"
                   alt="Education" 
                   fill
                   className="object-cover"
@@ -371,97 +345,7 @@ export default function Home() {
       {/* Quote Form Section */}
       <section className="section-padding bg-[#111111]">
         <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto">
-            <div className="text-center mb-10">
-              <div className="flex items-center justify-center gap-3 mb-4">
-                <span className="brand-accent-line" />
-                <span className="text-xs font-bold text-[#A80000] uppercase tracking-widest">Get Started</span>
-                <span className="brand-accent-line" />
-              </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Request a Quote
-              </h2>
-              <p className="text-gray-400">
-                Fill in your details and we will get back to you within 24 hours.
-              </p>
-            </div>
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-white text-sm mb-2 font-medium">Name *</label>
-                  <input
-                    type="text"
-                    required
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-4 py-3.5 rounded-xl bg-[#1a1a1a] text-white border border-[#333] focus:outline-none focus:border-[#A80000] transition-colors"
-                    placeholder="Your name"
-                  />
-                </div>
-                <div>
-                  <label className="block text-white text-sm mb-2 font-medium">Email *</label>
-                  <input
-                    type="email"
-                    required
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-4 py-3.5 rounded-xl bg-[#1a1a1a] text-white border border-[#333] focus:outline-none focus:border-[#A80000] transition-colors"
-                    placeholder="your@email.com"
-                  />
-                </div>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-white text-sm mb-2 font-medium">Phone *</label>
-                  <input
-                    type="tel"
-                    required
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full px-4 py-3.5 rounded-xl bg-[#1a1a1a] text-white border border-[#333] focus:outline-none focus:border-[#A80000] transition-colors"
-                    placeholder="+27 XX XXX XXXX"
-                  />
-                </div>
-                <div>
-                  <label className="block text-white text-sm mb-2 font-medium">Service Required *</label>
-                  <select
-                    required
-                    value={formData.service}
-                    onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                    className="w-full px-4 py-3.5 rounded-xl bg-[#1a1a1a] text-white border border-[#333] focus:outline-none focus:border-[#A80000] transition-colors"
-                  >
-                    <option value="">Select a service</option>
-                    <option value="waste_management">Waste Management</option>
-                    <option value="cleaning">Professional Cleaning</option>
-                    <option value="construction">Construction Support</option>
-                  </select>
-                </div>
-              </div>
-              <div>
-                <label className="block text-white text-sm mb-2 font-medium">Location</label>
-                <input
-                  type="text"
-                  value={formData.location}
-                  onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-                  className="w-full px-4 py-3.5 rounded-xl bg-[#1a1a1a] text-white border border-[#333] focus:outline-none focus:border-[#A80000] transition-colors"
-                  placeholder="City / Area"
-                />
-              </div>
-              <div>
-                <label className="block text-white text-sm mb-2 font-medium">Message</label>
-                <textarea
-                  rows={4}
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-4 py-3.5 rounded-xl bg-[#1a1a1a] text-white border border-[#333] focus:outline-none focus:border-[#A80000] transition-colors resize-none"
-                  placeholder="Tell us about your requirements..."
-                />
-              </div>
-              <Button type="submit" className="w-full bg-[#A80000] hover:bg-[#850000] text-white text-base py-5 rounded-full mt-2">
-                Submit Quote Request
-              </Button>
-            </form>
-          </div>
+          <DivisionQuoteForm sourcePage="/" />
         </div>
       </section>
     </div>

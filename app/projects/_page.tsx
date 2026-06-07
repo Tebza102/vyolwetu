@@ -19,7 +19,7 @@ const projects = [
     location: 'Johannesburg CBD',
     description: 'Complete cleaning services for a 20-story commercial building.',
     color: '#334A4F',
-    image: 'https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/Office%20Cleaning.png'
+    image: '/images/office-cleaning.webp'
   },
   {
     title: 'Industrial Waste Management',
@@ -28,7 +28,7 @@ const projects = [
     location: 'Mpumalanga',
     description: 'Responsible waste collection and recycling for manufacturing facility.',
     color: '#A80000',
-    image: 'https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team.png'
+    image: '/images/waste-team.webp'
   },
   {
     title: 'Site Clearing & Development',
@@ -37,7 +37,7 @@ const projects = [
     location: 'Gauteng',
     description: 'Complete site clearing and preparation for new development.',
     color: '#2F6F5E',
-    image: 'https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Construction/WhatsApp%20Image%202026-02-06%20at%206.02.33%20PM.jpeg'
+    image: '/images/construction-site.webp'
   },
   {
     title: 'Office Sanitization Services',
@@ -46,7 +46,7 @@ const projects = [
     location: 'Sandton',
     description: 'Regular sanitization and hygiene services for corporate offices.',
     color: '#334A4F',
-    image: 'https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/Site%20Cleaning.png'
+    image: '/images/site-cleaning.webp'
   },
   {
     title: 'Construction Site Waste Clearance',
@@ -55,7 +55,7 @@ const projects = [
     location: 'Pretoria',
     description: 'Efficient waste management and clearing for construction sites.',
     color: '#A80000',
-    image: 'https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team2.png'
+    image: '/images/waste-collection.webp'
   },
   {
     title: 'Site Support Services',
@@ -64,7 +64,7 @@ const projects = [
     location: 'Midrand',
     description: 'Practical site support and assistance for active project environments.',
     color: '#2F6F5E',
-    image: 'https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Construction/WhatsApp%20Image%202026-04-02%20at%2010.32.41%20AM%20(1).jpeg'
+    image: '/images/construction-infrastructure.webp'
   },
   {
     title: 'Industrial Deep Cleaning',
@@ -73,7 +73,7 @@ const projects = [
     location: 'Alberton',
     description: 'Comprehensive deep cleaning of industrial facility and warehouses.',
     color: '#334A4F',
-    image: 'https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/MD%20and%20the%20cleaning%20team.PNG'
+    image: '/images/cleaning-team.webp'
   },
   {
     title: 'Municipal Waste Collection',
@@ -82,7 +82,7 @@ const projects = [
     location: 'Ekurhuleni',
     description: 'Scheduled waste collection services for municipal areas.',
     color: '#A80000',
-    image: 'https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team.png'
+    image: '/images/waste-team.webp'
   },
   {
     title: 'Post-Construction Cleaning',
@@ -91,7 +91,7 @@ const projects = [
     location: 'Centurion',
     description: 'Complete cleaning and handover services after construction.',
     color: '#334A4F',
-    image: 'https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/Office%20Cleaning.png'
+    image: '/images/office-cleaning.webp'
   }
 ]
 

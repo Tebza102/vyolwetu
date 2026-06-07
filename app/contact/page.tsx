@@ -1,38 +1,10 @@
-'use client'
-
-import { useState } from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Phone, Mail, MapPin, MessageCircle, Clock } from 'lucide-react'
+import { DivisionQuoteForm } from '@/components/division-quote-form'
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    service: '',
-    location: '',
-    message: ''
-  })
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    try {
-      const response = await fetch('/api/quote', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
-      })
-      if (response.ok) {
-        alert('Quote request submitted successfully! We will contact you soon.')
-        setFormData({ name: '', email: '', phone: '', service: '', location: '', message: '' })
-      }
-    } catch {
-      alert('Something went wrong. Please try again.')
-    }
-  }
-
   return (
     <div>
       <section className="bg-[#111111] text-white py-16 lg:py-24 brand-curve-top-left">
@@ -124,87 +96,7 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <Card className="border-[#E8E8E8]">
-              <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-[#111111] mb-6">Request a Quote</h3>
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-[#111111] text-sm mb-2 font-medium">Name *</label>
-                      <input
-                        type="text"
-                        required
-                        value={formData.name}
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-[#F7F7F7] text-[#111111] border border-[#E8E8E8] focus:outline-none focus:border-[#A80000] transition-colors"
-                        placeholder="Your name"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-[#111111] text-sm mb-2 font-medium">Email *</label>
-                      <input
-                        type="email"
-                        required
-                        value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-[#F7F7F7] text-[#111111] border border-[#E8E8E8] focus:outline-none focus:border-[#A80000] transition-colors"
-                        placeholder="your@email.com"
-                      />
-                    </div>
-                  </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-[#111111] text-sm mb-2 font-medium">Phone *</label>
-                      <input
-                        type="tel"
-                        required
-                        value={formData.phone}
-                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-[#F7F7F7] text-[#111111] border border-[#E8E8E8] focus:outline-none focus:border-[#A80000] transition-colors"
-                        placeholder="+27 XX XXX XXXX"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-[#111111] text-sm mb-2 font-medium">Service Required *</label>
-                      <select
-                        required
-                        value={formData.service}
-                        onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-[#F7F7F7] text-[#111111] border border-[#E8E8E8] focus:outline-none focus:border-[#A80000] transition-colors"
-                      >
-                        <option value="">Select a service</option>
-                        <option value="waste_management">Waste Management</option>
-                        <option value="cleaning">Professional Cleaning</option>
-                        <option value="construction">Construction Support</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div>
-                    <label className="block text-[#111111] text-sm mb-2 font-medium">Location</label>
-                    <input
-                      type="text"
-                      value={formData.location}
-                      onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-[#F7F7F7] text-[#111111] border border-[#E8E8E8] focus:outline-none focus:border-[#A80000] transition-colors"
-                      placeholder="City / Area"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-[#111111] text-sm mb-2 font-medium">Message</label>
-                    <textarea
-                      rows={4}
-                      value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-[#F7F7F7] text-[#111111] border border-[#E8E8E8] focus:outline-none focus:border-[#A80000] transition-colors resize-none"
-                      placeholder="Tell us about your requirements..."
-                    />
-                  </div>
-                  <Button type="submit" className="w-full bg-[#A80000] hover:bg-[#850000] text-white text-base py-5 rounded-full mt-2">
-                    Submit Quote Request
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
+            <DivisionQuoteForm sourcePage="/contact" />
           </div>
         </div>
       </section>

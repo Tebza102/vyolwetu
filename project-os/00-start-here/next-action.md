@@ -9,10 +9,10 @@
 5. Wait for approval before changing application source code.
 
 ## Current Recommended Action
-Write the next specific action here.
+Manually smoke-test the deployed home, about, cleaning, construction, waste-management, and CSI pages on `https://www.vyolwetu.co.za`.
 
 ## Do Not Do Yet
-List tempting actions that should not be done yet. Examples: refactor app, change auth, install packages, redesign UI, change database schema, deploy to production.
+Do not redesign pages, replace the recovered client photography, or change unrelated packages while validating this fix.
 
 ## Definition of Done for Next Action
-Explain how we will know the next action is complete.
+Every public page renders its intended photographs with no empty alt-text placeholders or requests to the dead Supabase hostname.

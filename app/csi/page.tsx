@@ -57,7 +57,7 @@ export default function CSIPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
             <div className="relative min-h-[300px] aspect-[3/4] rounded-lg overflow-hidden shadow-lg">
               <Image 
-                src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.37.08%20PM.jpeg" 
+                src="/images/csi-school-bags.webp"
                 alt="1000 School Bags Campaign" 
                 fill
                 className="object-cover"
@@ -200,7 +200,7 @@ export default function CSIPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-4">
               <div className="min-h-[300px] aspect-[3/4] md:aspect-auto md:row-span-2 relative rounded-lg overflow-hidden shadow-md">
                 <Image 
-                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.37.08%20PM.jpeg" 
+                  src="/images/csi-school-bags.webp"
                   alt="School Bags" 
                   fill
                   className="object-cover"
@@ -208,7 +208,7 @@ export default function CSIPage() {
               </div>
               <div className="relative min-h-[180px] aspect-[3/2] rounded-lg overflow-hidden shadow-md">
                 <Image 
-                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.40%20PM.jpeg" 
+                  src="/images/csi-community.webp"
                   alt="Community" 
                   fill
                   className="object-cover"
@@ -216,7 +216,7 @@ export default function CSIPage() {
               </div>
               <div className="relative min-h-[180px] aspect-[3/2] rounded-lg overflow-hidden shadow-md">
                 <Image 
-                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.38%20PM.jpeg" 
+                  src="/images/csi-education.webp"
                   alt="Education" 
                   fill
                   className="object-cover"

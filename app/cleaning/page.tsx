@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Phone, ArrowRight, CheckCircle, MessageCircle, Building2, Factory, Sparkles, Wind, HardHat, Shield, LayoutGrid, ArrowUp, Calendar, ClipboardCheck, Leaf, MapPin, Globe, Users, Clock } from 'lucide-react'
 import Link from 'next/link'
+import { DivisionQuoteForm } from '@/components/division-quote-form'
 
 
 export const metadata: Metadata = {
@@ -375,7 +376,7 @@ export default function CleaningPage() {
             <div className="grid grid-cols-2 gap-4">
               <div className="relative min-h-[200px] aspect-[4/3] rounded-lg overflow-hidden shadow-md">
                 <Image 
-                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/MD%20and%20the%20cleaning%20team.PNG" 
+                  src="/images/cleaning-team.webp"
                   alt="Professional cleaning team" 
                   fill
                   className="object-cover"
@@ -383,7 +384,7 @@ export default function CleaningPage() {
               </div>
               <div className="relative min-h-[200px] aspect-[4/3] rounded-lg overflow-hidden shadow-md">
                 <Image 
-                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/Site%20Cleaning.png" 
+                  src="/images/site-cleaning.webp"
                   alt="Site cleaning services" 
                   fill
                   className="object-cover"
@@ -492,7 +493,7 @@ export default function CleaningPage() {
             <div className="card-brand overflow-hidden">
               <div className="relative min-h-[200px] aspect-[4/3]">
                 <Image 
-                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/MD%20and%20the%20cleaning%20team.PNG" 
+                  src="/images/cleaning-team.webp"
                   alt="Professional cleaning team" 
                   fill
                   className="object-cover"
@@ -506,7 +507,7 @@ export default function CleaningPage() {
             <div className="card-brand overflow-hidden">
               <div className="relative min-h-[200px] aspect-[4/3]">
                 <Image 
-                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/Office%20Cleaning.png" 
+                  src="/images/office-cleaning.webp"
                   alt="Office cleaning services" 
                   fill
                   className="object-cover"
@@ -520,7 +521,7 @@ export default function CleaningPage() {
             <div className="card-brand overflow-hidden">
               <div className="relative min-h-[200px] aspect-[4/3]">
                 <Image 
-                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/Site%20Cleaning.png" 
+                  src="/images/site-cleaning.webp"
                   alt="Site cleaning services" 
                   fill
                   className="object-cover"
@@ -535,46 +536,10 @@ export default function CleaningPage() {
         </div>
       </section>
 
-      {/* Final CTA Section */}
+      {/* Quote Form Section */}
       <section className="section-padding bg-[#111111]">
-        <div className="container mx-auto px-4 text-center">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <span className="inline-block w-10 h-1 bg-[#0C8CB5] rounded-full" />
-            <span className="text-xs font-bold text-[#0C8CB5] uppercase tracking-widest">Get Started</span>
-            <span className="inline-block w-10 h-1 bg-[#0C8CB5] rounded-full" />
-          </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Need Professional Cleaning Support?
-          </h2>
-          <p className="text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Speak to Vyolwetu Cleaning Services about office cleaning, industrial deep cleaning, sanitisation, window cleaning, post-construction cleaning, site hygiene services, carpet and floor care, high-level cleaning, or facility readiness support.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact">
-              <Button className="bg-[#A80000] hover:bg-[#850000] text-white text-base px-8 py-5 rounded-full">
-                <ArrowRight className="w-5 h-5 mr-2" />
-                Request a Quote
-              </Button>
-            </Link>
-            <a href="https://wa.me/27797517507?text=Hi%20Vyolwetu,%20I%27d%20like%20to%20inquire%20about%20cleaning%20services" target="_blank" rel="noopener noreferrer">
-              <Button className="bg-[#25D366] hover:bg-[#20BD5A] text-white text-base px-8 py-5 rounded-full">
-                <MessageCircle className="w-5 h-5 mr-2" />
-                WhatsApp Us
-              </Button>
-            </a>
-          </div>
-          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-gray-500">
-            <a href="tel:+27797517507" className="flex items-center gap-2 hover:text-[#0C8CB5] transition-colors">
-              <Phone className="w-4 h-4" />
-              <span>+27 79 751 7507</span>
-            </a>
-            <span className="hidden sm:inline text-gray-700">|</span>
-            <span>55 Maseko Street, Duduza, 1496</span>
-            <span className="hidden sm:inline text-gray-700">|</span>
-            <a href="mailto:nqobile@vyolwetu.co.za" className="hover:text-[#0C8CB5] transition-colors">
-              nqobile@vyolwetu.co.za
-            </a>
-          </div>
+        <div className="container mx-auto px-4">
+          <DivisionQuoteForm defaultDivision="cleaning" sourcePage="/cleaning" />
         </div>
       </section>
     </div>

@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Phone, ArrowRight, CheckCircle, MessageCircle, Shield, Wrench, Users, Leaf, HardHat, ClipboardList, Droplets, Road, Home, Paintbrush, Truck, Sparkles } from 'lucide-react'
 import Link from 'next/link'
+import { DivisionQuoteForm } from '@/components/division-quote-form'
 
 
 export const metadata: Metadata = {
@@ -315,7 +316,7 @@ export default function ConstructionPage() {
             <div className="grid grid-cols-2 gap-4">
               <div className="relative min-h-[200px] aspect-[4/3] rounded-lg overflow-hidden shadow-md">
                 <Image 
-                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Construction/WhatsApp%20Image%202026-02-06%20at%206.02.33%20PM.jpeg" 
+                  src="/images/construction-site.webp"
                   alt="Construction site work" 
                   fill
                   className="object-cover"
@@ -323,7 +324,7 @@ export default function ConstructionPage() {
               </div>
               <div className="relative min-h-[200px] aspect-[4/3] rounded-lg overflow-hidden shadow-md">
                 <Image 
-                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Construction/WhatsApp%20Image%202026-04-02%20at%2010.32.41%20AM%20(1).jpeg" 
+                  src="/images/construction-infrastructure.webp"
                   alt="Infrastructure project" 
                   fill
                   className="object-cover"
@@ -445,7 +446,7 @@ export default function ConstructionPage() {
             <div className="card-brand overflow-hidden">
               <div className="relative min-h-[200px] aspect-[4/3]">
                 <Image 
-                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Construction/WhatsApp%20Image%202026-02-06%20at%206.02.33%20PM.jpeg" 
+                  src="/images/construction-site.webp"
                   alt="Site Development" 
                   fill
                   className="object-cover"
@@ -459,7 +460,7 @@ export default function ConstructionPage() {
             <div className="card-brand overflow-hidden">
               <div className="relative min-h-[200px] aspect-[4/3]">
                 <Image 
-                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Construction/WhatsApp%20Image%202026-04-02%20at%2010.32.41%20AM%20(1).jpeg" 
+                  src="/images/construction-infrastructure.webp"
                   alt="Construction Support" 
                   fill
                   className="object-cover"
@@ -473,7 +474,7 @@ export default function ConstructionPage() {
             <div className="card-brand overflow-hidden">
               <div className="relative min-h-[200px] aspect-[4/3]">
                 <Image 
-                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Construction/WhatsApp%20Image%202026-02-06%20at%206.02.33%20PM.jpeg" 
+                  src="/images/construction-site.webp"
                   alt="Site Preparation" 
                   fill
                   className="object-cover"
@@ -488,46 +489,10 @@ export default function ConstructionPage() {
         </div>
       </section>
 
-      {/* Final CTA Section */}
+      {/* Quote Form Section */}
       <section className="section-padding bg-[#111111]">
-        <div className="container mx-auto px-4 text-center">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <span className="inline-block w-10 h-1 bg-[#A86A00] rounded-full" />
-            <span className="text-xs font-bold text-[#A86A00] uppercase tracking-widest">Get Started</span>
-            <span className="inline-block w-10 h-1 bg-[#A86A00] rounded-full" />
-          </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Need Reliable Construction or Site Support?
-          </h2>
-          <p className="text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Speak to Vyolwetu Construction about your project planning, infrastructure support, plumbing, paving, finishing work, site preparation, or post-construction readiness needs.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact">
-              <Button className="bg-[#A80000] hover:bg-[#850000] text-white text-base px-8 py-5 rounded-full">
-                <ArrowRight className="w-5 h-5 mr-2" />
-                Request a Quote
-              </Button>
-            </Link>
-            <a href="https://wa.me/27797517507?text=Hi%20Vyolwetu,%20I%27d%20like%20to%20inquire%20about%20construction%20services" target="_blank" rel="noopener noreferrer">
-              <Button className="bg-[#25D366] hover:bg-[#20BD5A] text-white text-base px-8 py-5 rounded-full">
-                <MessageCircle className="w-5 h-5 mr-2" />
-                WhatsApp Us
-              </Button>
-            </a>
-          </div>
-          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-gray-500">
-            <a href="tel:+27797517507" className="flex items-center gap-2 hover:text-[#A86A00] transition-colors">
-              <Phone className="w-4 h-4" />
-              <span>+27 79 751 7507</span>
-            </a>
-            <span className="hidden sm:inline text-gray-700">|</span>
-            <span>55 Maseko Street, Duduza, 1496</span>
-            <span className="hidden sm:inline text-gray-700">|</span>
-            <a href="mailto:nqobile@vyolwetu.co.za" className="hover:text-[#A86A00] transition-colors">
-              nqobile@vyolwetu.co.za
-            </a>
-          </div>
+        <div className="container mx-auto px-4">
+          <DivisionQuoteForm defaultDivision="construction" sourcePage="/construction" />
         </div>
       </section>
     </div>

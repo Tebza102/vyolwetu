@@ -9,28 +9,35 @@ const supabase = createClient(supabaseUrl, supabaseAnonKey)
 export async function POST(request: Request) {
   try {
     const body = await request.json()
-    const { name, email, phone, service, location, message } = body
+    const { name, email, phone, service, location, message, division_details } = body
 
-    if (!name || !email || !phone || !service) {
+    // ── Common required fields ──
+    if (!name || !phone || !service) {
       return NextResponse.json(
-        { error: 'Missing required fields' },
+        { error: 'Missing required fields: name, phone, and service are required' },
         { status: 400 }
       )
     }
 
+    // ── Build insert payload ──
+    const insertPayload: Record<string, unknown> = {
+      name,
+      email: email || '',
+      phone,
+      service,
+      location: location || '',
+      message: message || '',
+      status: 'new',
+    }
+
+    // ── Add division_details if present (new format) ──
+    if (division_details && typeof division_details === 'object') {
+      insertPayload.division_details = division_details
+    }
+
     const { data, error } = await supabase
       .from('quotes')
-      .insert([
-        {
-          name,
-          email,
-          phone,
-          service,
-          location: location || '',
-          message: message || '',
-          status: 'new'
-        }
-      ])
+      .insert([insertPayload])
       .select()
 
     if (error) {

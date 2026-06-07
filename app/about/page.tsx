@@ -87,7 +87,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-2 gap-4">
               <div className="relative min-h-[200px] aspect-[4/3] rounded-lg overflow-hidden shadow-md">
                 <Image 
-                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/Office%20Cleaning.png" 
+                  src="/images/office-cleaning.webp"
                   alt="Commercial Cleaning" 
                   fill
                   className="object-cover"
@@ -95,7 +95,7 @@ export default function AboutPage() {
               </div>
               <div className="relative min-h-[200px] aspect-[4/3] rounded-lg overflow-hidden shadow-md">
                 <Image 
-                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Waste%20Management/Vyolwetu%20team.png" 
+                  src="/images/waste-team.webp"
                   alt="Waste Management" 
                   fill
                   className="object-cover"
@@ -103,7 +103,7 @@ export default function AboutPage() {
               </div>
               <div className="relative min-h-[200px] aspect-[4/3] rounded-lg overflow-hidden shadow-md">
                 <Image 
-                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/MD%20and%20the%20cleaning%20team.PNG" 
+                  src="/images/cleaning-team.webp"
                   alt="Cleaning Team" 
                   fill
                   className="object-cover"
@@ -111,7 +111,7 @@ export default function AboutPage() {
               </div>
               <div className="relative min-h-[200px] aspect-[4/3] rounded-lg overflow-hidden shadow-md">
                 <Image 
-                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Construction/WhatsApp%20Image%202026-02-06%20at%206.02.33%20PM.jpeg" 
+                  src="/images/construction-site.webp"
                   alt="Construction Support" 
                   fill
                   className="object-cover"
@@ -209,7 +209,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-3 gap-4">
               <div className="min-h-[300px] aspect-[3/4] md:aspect-auto md:row-span-3 relative rounded-lg overflow-hidden shadow-md">
                 <Image 
-                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.37.08%20PM.jpeg" 
+                  src="/images/csi-school-bags.webp"
                   alt="Environment" 
                   fill
                   className="object-cover"
@@ -217,7 +217,7 @@ export default function AboutPage() {
               </div>
               <div className="relative min-h-[180px] aspect-[3/2] rounded-lg overflow-hidden shadow-md">
                 <Image 
-                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.40%20PM.jpeg" 
+                  src="/images/csi-community.webp"
                   alt="Community" 
                   fill
                   className="object-cover"
@@ -225,7 +225,7 @@ export default function AboutPage() {
               </div>
               <div className="relative min-h-[180px] aspect-[3/2] rounded-lg overflow-hidden shadow-md">
                 <Image 
-                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/CSI/WhatsApp%20Image%202026-03-02%20at%2012.27.38%20PM.jpeg" 
+                  src="/images/csi-education.webp"
                   alt="Education" 
                   fill
                   className="object-cover"
@@ -233,7 +233,7 @@ export default function AboutPage() {
               </div>
               <div className="relative min-h-[180px] aspect-[3/2] rounded-lg overflow-hidden shadow-md">
                 <Image 
-                  src="https://hjihzshrycisbfjvyzje.supabase.co/storage/v1/object/public/vyolwetu-images/Cleaning/MD%20and%20the%20cleaning%20team.PNG" 
+                  src="/images/cleaning-team.webp"
                   alt="Skills" 
                   fill
                   className="object-cover"

@@ -90,3 +90,31 @@ Pass
 
 **Next action:**
 - Add the missing master operating prompt file to `project-os/10-prompts` if future prompt-level integration is required.
+
+### 2026-06-07 - Force Fix Broken Website Photos
+
+**Changed by:** Codex
+
+**Files changed:**
+- Content-photo references in home, about, cleaning, construction, waste-management, CSI, and hidden projects pages
+- `next.config.ts`
+- `public/images/*`
+
+**Summary:**
+Replaced the unavailable Supabase image-host dependency with ten recovered, local, version-controlled Vyolwetu photographs. All dead storage URLs were removed.
+
+**Tests run:**
+- Direct DNS and HTTP checks against the old storage host
+- Decoded and visually inspected all ten recovered WebP files
+- Searched application source for remaining dead storage references
+- `npm.cmd run lint`
+- `npm.cmd run build`
+
+**Result:**
+Image fix passed source and asset verification. Lint passed with warnings only. Production build reaches the external Google Fonts fetch and is blocked by restricted network access.
+
+**Risks remaining:**
+- Full local browser QA is blocked by a separate Tailwind resolution conflict with the parent Windows user workspace.
+
+**Next action:**
+- Deploy or preview from a clean build environment and smoke-test the public pages.

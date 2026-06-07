@@ -7,13 +7,17 @@ This file records the current real state of the project. It must be updated when
 - To be filled after project scan.
 
 ## What Works
-- To be confirmed through testing.
+- Website content photography is stored locally under `public/images`.
+- All ten recovered Vyolwetu photographs decode successfully.
+- Application source no longer depends on the unavailable Supabase storage host.
+- The image repair is deployed to production at `https://www.vyolwetu.co.za`.
 
 ## What Is Incomplete
 - To be filled after project scan.
 
 ## Current Blockers
-- To be filled after project scan.
+- Production build in this restricted environment cannot fetch Inter from Google Fonts.
+- Local development rendering has a separate Tailwind resolution conflict with the parent `C:\Users\appri` workspace.
 
 ## Known Risks
 - To be filled after project scan.
@@ -30,4 +34,4 @@ This file records the current real state of the project. It must be updated when
 - Security rules
 
 ## Last Updated
-Add date, time, agent/tool used, and summary of change.
+2026-06-07 - Codex force-fixed broken content photography and deployed the repair successfully to Vercel production.
