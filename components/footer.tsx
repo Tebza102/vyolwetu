@@ -129,12 +129,12 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Vyolwetu. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm items-center">
-            <a href="#" className="text-gray-500 hover:text-[#A80000] transition-colors">
+            <Link href="/privacy-policy" className="text-gray-500 hover:text-[#A80000] transition-colors">
               Privacy Policy
-            </a>
-            <a href="#" className="text-gray-500 hover:text-[#A80000] transition-colors">
+            </Link>
+            <Link href="/terms-of-service" className="text-gray-500 hover:text-[#A80000] transition-colors">
               Terms of Service
-            </a>
+            </Link>
             <a 
               href="https://www.apprigate.com" 
               target="_blank" 
