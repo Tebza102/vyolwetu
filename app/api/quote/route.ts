@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import { writeQuote } from '@/lib/firebase'
+import { sendQuoteEmail } from '@/lib/email'
 
 export async function POST(request: Request) {
   try {
@@ -29,6 +30,10 @@ export async function POST(request: Request) {
     }
 
     const result = await writeQuote(insertPayload)
+
+    sendQuoteEmail(insertPayload).catch((err) =>
+      console.error('Email notification failed:', err)
+    )
 
     return NextResponse.json(
       { message: 'Quote request submitted successfully', data: result },
