@@ -241,6 +241,89 @@
   background-color: #2a2a2a;
 }
 
+.profile-cta {
+  display: inline-flex;
+  min-height: 3rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  padding: 0.75rem 1.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+.profile-cta-primary {
+  background: #A80000;
+  color: #FFFFFF;
+}
+.profile-cta-light-outline {
+  border-color: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.06);
+  color: #FFFFFF;
+}
+.profile-cta-whatsapp {
+  background: #00D96F;
+  color: #102D32;
+}
+.profile-cta:hover {
+  filter: brightness(0.94);
+  transform: translateY(-1px);
+}
+.profile-cta:focus-visible {
+  outline: 2px solid #7DD3FC;
+  outline-offset: 3px;
+}
+
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body {
+    background: #ffffff !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  body > header,
+  body > footer,
+  .no-print {
+    display: none !important;
+  }
+  body,
+  main,
+  .profile-root,
+  .profile-document {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: none !important;
+  }
+  .profile-page {
+    width: 210mm !important;
+    height: 297mm !important;
+    min-height: 297mm !important;
+    max-height: 297mm !important;
+    break-after: page;
+    page-break-after: always;
+    box-shadow: none !important;
+  }
+  .profile-page:last-child {
+    break-after: auto;
+    page-break-after: auto;
+  }
+  html[data-profile-export="print"] .profile-cta-group {
+    display: none !important;
+  }
+  a {
+    text-decoration: none !important;
+  }
+}
+
 /* Global container containment */
 .container,
 .content-container {

@@ -537,7 +537,7 @@ export default function CleaningPage() {
       </section>
 
       {/* Quote Form Section */}
-      <section className="section-padding bg-[#111111]">
+      <section id="cleaning-quote" className="section-padding scroll-mt-28 bg-[#111111]">
         <div className="container mx-auto px-4">
           <DivisionQuoteForm defaultDivision="cleaning" sourcePage="/cleaning" />
         </div>
